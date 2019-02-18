@@ -39,5 +39,5 @@
   $response = curl_exec($ch);
   curl_close($ch);
 
-  $xml = simplexml_load_string($response);
+  $xml = simplexml_load_string($response, LIBXML_NOWARNING);
   return json_encode($xml);

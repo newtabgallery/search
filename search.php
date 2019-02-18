@@ -16,6 +16,8 @@
   $qt = '';
   if (isset($_POST["qt"]) && !empty($_POST["qt"])) {
     $qt = $_POST["qt"];
+  } else {
+    return;
   }
 
   $params = array(

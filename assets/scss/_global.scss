@@ -1,0 +1,27 @@
+body {
+  @include body-font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include body-font;
+  font-weight: 700;
+}
+
+.listing {
+  margin: 40px 0;
+
+  .display-url {
+    color: $green;
+    font-style: italic;
+    margin: 5px 0;
+  }
+}
+
+.hidden-impression {
+  position: absolute;
+}

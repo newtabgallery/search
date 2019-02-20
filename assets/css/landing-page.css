@@ -6,6 +6,7 @@
 
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: .8em;
 }
 
 h1,
@@ -15,17 +16,26 @@ h4,
 h5,
 h6 {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: .8em;
   font-weight: 700;
+  font-size: 1.25em;
 }
 
 .listing {
-  margin: 40px 0;
+  margin: 30px 0;
 }
 
 .listing .display-url {
   color: #28a745;
   font-style: italic;
   margin: 5px 0;
+}
+
+.listing .marketplace-label {
+  border: 1px solid #28a745;
+  padding: 0px 4px;
+  border-radius: 8px;
+  margin-right: 5px;
 }
 
 .hidden-impression {

@@ -10,15 +10,23 @@ h5,
 h6 {
   @include body-font;
   font-weight: 700;
+  font-size: 1.25em;
 }
 
 .listing {
-  margin: 40px 0;
+  margin: 30px 0;
 
   .display-url {
     color: $green;
     font-style: italic;
     margin: 5px 0;
+  }
+
+  .marketplace-label {
+    border: 1px solid $green;
+    padding: 0px 4px;
+    border-radius: 8px;
+    margin-right: 5px;
   }
 }
 

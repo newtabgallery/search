@@ -83,6 +83,7 @@
     function onReady(){
         if ($.urlParam(SEARCH_NAME)) {
             $("#search-input").val(decodeURIComponent($.urlParam(SEARCH_NAME)));
+            newTabGallerySearch();
         }
 
         if (window.performance && window.performance.navigation.type == window.performance.navigation.TYPE_BACK_FORWARD) {

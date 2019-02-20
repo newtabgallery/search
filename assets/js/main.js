@@ -1,8 +1,31 @@
 (function($) {
+    const SEARCH_NAME = 'q';
+
+    $.urlParam = function (name) {
+        var results = new RegExp('[\?&]' + name + '=([^&#]*)')
+                          .exec(window.location.href);
+        if (results == null) {
+             return 0;
+        }
+        return results[1] || 0;
+    }
+    
+    function updateURL(searchParams) {
+        if (history.pushState) {
+            var newurl = window.location.protocol + "//" + 
+                window.location.host +
+                window.location.pathname +
+                "?" + SEARCH_NAME + "=" + encodeURIComponent(searchParams);
+            window.history.pushState({ path:newurl }, '', newurl);
+        }
+    }
+
     function newTabGallerySearch() {
         const baseQueryUrl = "https://search.newtabgallery.com/search.php";
+        const searchTerms = $("#search-input").val();
+
         const searchQuery = {
-            qt: $("#search-input").val(),
+            qt: searchTerms,
         };
 
         $.ajax({
@@ -13,7 +36,8 @@
             success: postResults,
         });
 
-        window.localStorage.setItem("search-input", $("#search-input").val());
+        window.localStorage.setItem("search-input", searchTerms);
+        updateURL(searchTerms);
     }
 
     function generateListing(listing) {
@@ -46,7 +70,7 @@
         window.localStorage.setItem("web-listings", $("#web-listings").html());
     }
 
-    function onLoadPage(){
+    function onBackButtonNavigation(){
         if(window.localStorage.getItem("web-listings") != null){
             $("#web-listings").html(window.localStorage.getItem("web-listings"));
         }
@@ -57,11 +81,13 @@
     }
 
     function onReady(){
-        if (window.performance && window.performance.navigation.type == window.performance.navigation.TYPE_BACK_FORWARD) {
-            onLoadPage();
+        if ($.urlParam(SEARCH_NAME)) {
+            $("#search-input").val(decodeURIComponent($.urlParam(SEARCH_NAME)));
         }
 
-        $(".masthead").addClass("background-" + Math.floor(Math.random() * 5 + 1));
+        if (window.performance && window.performance.navigation.type == window.performance.navigation.TYPE_BACK_FORWARD) {
+            onBackButtonNavigation();
+        }
 
         $("#search-submit").on('click', () => {
             newTabGallerySearch();
@@ -70,7 +96,9 @@
         $("#search-form").on('submit', (form) => {
             form.preventDefault();
             newTabGallerySearch();
-        })
+        });
+
+        $(".masthead").addClass("background-" + Math.floor(Math.random() * 5 + 1));
     }
 
     $(document).ready(onReady);

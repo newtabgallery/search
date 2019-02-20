@@ -7,37 +7,21 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Landing Page - Start Bootstrap Theme</title>
+  <title><?php echo $title; ?></title>
 
   <!-- Bootstrap core CSS -->
-  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
-  <link href="../assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="../assets/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+  <link href="./assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="./assets/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
   <!-- Custom styles for this template -->
   <link href="../assets/css/landing-page.min.css" rel="stylesheet">
 </head>
 
-<style>
-  header.masthead.background-1 {
-    background-image: url('')
-  }
-  header.masthead.background-2 {
-    background-image: url('')
-  }
-  header.masthead.background-3 {
-    background-image: url('')
-  }
-  header.masthead.background-4 {
-    background-image: url('')
-  }
-  header.masthead.background-5 {
-    background-image: url('')
-  }
-</style>
+<?php echo $background_image_style; ?>
 
 <body>
   <!-- Masthead -->
@@ -82,9 +66,9 @@
   </footer>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="../assets/vendor/jquery/jquery.min.js"></script>
-  <script src="../assets/vendor/js/main.min.js"></script>
-  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/vendor/jquery/jquery.min.js"></script>
+  <script src="./assets/vendor/js/main.min.js"></script>
+  <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

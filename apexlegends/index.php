@@ -2,7 +2,7 @@
 $title = 'ApexLegends';
 
 // NewTabGallery: Edit these to change the rendered background images
-$background_image_style = `
+$background_image_style = "
 <style>
     header.masthead.background-1 {
       background-image: url('https://images.alphacoders.com/989/thumb-1920-989913.png')
@@ -20,7 +20,7 @@ $background_image_style = `
       background-image: url('https://images5.alphacoders.com/989/989918.png')
     }
 </style>
-`;
+";
 
 include('../template/index.php');
 ?>

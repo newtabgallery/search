@@ -36,7 +36,6 @@
             success: postResults,
         });
 
-        window.localStorage.setItem("search-input", searchTerms);
         updateURL(searchTerms);
     }
 
@@ -66,28 +65,12 @@
 
         adListings.forEach(ad => $("#web-listings").append(generateAd(ad)));
         webListings.forEach(listing => $("#web-listings").append(generateListing(listing)));
-
-        window.localStorage.setItem("web-listings", $("#web-listings").html());
-    }
-
-    function onBackButtonNavigation(){
-        if(window.localStorage.getItem("web-listings") != null){
-            $("#web-listings").html(window.localStorage.getItem("web-listings"));
-        }
-
-        if(window.localStorage.getItem("search-input") != null){
-            $("#search-input").val(window.localStorage.getItem("search-input"));
-        }
     }
 
     function onReady(){
         if ($.urlParam(SEARCH_NAME)) {
             $("#search-input").val(decodeURIComponent($.urlParam(SEARCH_NAME)));
             newTabGallerySearch();
-        }
-
-        if (window.performance && window.performance.navigation.type == window.performance.navigation.TYPE_BACK_FORWARD) {
-            onBackButtonNavigation();
         }
 
         $("#search-submit").on('click', () => {

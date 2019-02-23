@@ -6,7 +6,7 @@ Creating a new project
 2. Click the "Branch master" dropdown button on the left.
 3. Type the shortname of your new project (mexicanfood) and click Create.
 4. Click "Create new File"
-5. In the entry field, type the shortname of your new project /index.html (mexicanfood/index.html)
+5. In the entry field, type the shortname of your new project /index.php (mexicanfood/index.php)
 6. For the contents of the file, copy the php file located in /template/template-index.php and edit the background image values.
 
 ```php

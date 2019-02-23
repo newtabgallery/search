@@ -68,7 +68,7 @@
     }
 
     function onReady(){
-        if ($.urlParam(SEARCH_NAME)) {
+        if ($.urlParam(SEARCH_NAME) != "") {
             $("#search-input").val(decodeURIComponent($.urlParam(SEARCH_NAME)));
             newTabGallerySearch();
         }

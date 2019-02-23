@@ -28,9 +28,9 @@
     'ip' => $_SERVER['REMOTE_ADDR'],
     'ua' => $_SERVER['HTTP_USER_AGENT'],
     'rfr' => $_SERVER['HTTP_REFERER'],
-    'results' => 2,
+    'results' => 6,
     'web' => 1,
-    'web-results' => 10,
+    'web-results' => 15,
     'out' => 'json',
   );
 
@@ -42,5 +42,5 @@
   libxml_use_internal_errors(TRUE);
   $xml = simplexml_load_string($response);
   libxml_clear_errors();
-  
+
   return json_encode($xml);

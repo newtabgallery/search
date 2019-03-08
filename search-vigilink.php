@@ -20,21 +20,17 @@
     return;
   }
 
-  $ad_marketplace_params = array(
-    'partner' => 'demofeed',
-    'qt' => $qt,
-    'sub1' => "searchbox1",
-    'v' => 7,
-    'ip' => $_SERVER['REMOTE_ADDR'],
-    'ua' => $_SERVER['HTTP_USER_AGENT'],
-    'rfr' => $_SERVER['HTTP_REFERER'],
-    'results' => 6,
-    'web' => 1,
-    'web-results' => 15,
-    'out' => 'json',
+  # Start vigilink request
+  $vigilink_params = array(
+    'apiKey' => getenv('VIGILINK_API_KEY'),
+    'query' => $qt,
   );
 
-  $ad_marketplace_curl = curl_init();
-  curl_setopt($ad_marketplace_curl, CURLOPT_URL, 'https://demofeed.ampfeed.com/xmlamp/feed?' . http_build_query($ad_marketplace_params));
-  $ad_marketplace_response = curl_exec($ad_marketplace_curl);
-  curl_close($ad_marketplace_curl);
+  $vigilink_curl = curl_init();
+  curl_setopt($vigilink_curl, CURLOPT_URL, 'https://rest.viglink.com/api/merchant/metadata?' . http_build_query($vigilink_params));
+  curl_setopt($vigilink_curl, CURLOPT_HTTPHEADER, array('Authorization: secret ' . getenv('VIGILINK_SECRET_KEY')));
+  curl_setopt($vigilink_curl, CURLOPT_RETURNTRANSFER, 1);
+  $vigilink_response = curl_exec($vigilink_curl);
+  curl_close($vigilink_curl);
+
+  echo $vigilink_response;

@@ -9,12 +9,43 @@ h4,
 h5,
 h6 {
   @include body-font;
-  font-weight: 700;
-  font-size: 1.25em;
+  font-weight: normal;
+  font-size: 18px;
 }
 
 .listing {
   margin: 30px 0;
+
+  &.card {
+    padding: 10px;
+
+    .card-footer {
+      background: none;
+      padding: 0;
+      padding-top: 10px;
+
+      .product-link {
+        & + .product-divider {
+          &:after {
+            margin: 7px;
+            content: "‧";
+          }
+  
+          &:last-child {
+            &:after {
+              content: ''
+            }
+          }
+        }
+      }
+
+      .sponsored {
+        font-size: .7em;
+        opacity: .75;
+        vertical-align: middle;
+      }
+    }
+  }
 
   .display-url {
     color: $green;

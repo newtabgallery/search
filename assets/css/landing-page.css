@@ -51,6 +51,10 @@ h6 {
   vertical-align: middle;
 }
 
+.listing .display-url-link {
+  text-decoration: none;
+}
+
 .listing .display-url {
   color: #28a745;
   font-style: italic;

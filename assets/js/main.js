@@ -75,7 +75,9 @@
 
         return `<div class='listing ad ${cardData ? 'card' : ''}'>
                 <a id='${ad.adId}' href='${ad.clickurl}'><h3 class='title'>${ad.title}</h3></a>
-                <p class='display-url'><span class='marketplace-label'>Ad</span>${ad.displayurl}</p>
+                <a id='${ad.adId}' href='${ad.clickurl}' class="display-url-link">
+                    <p class='display-url'><span class='marketplace-label'>Ad</span>${ad.displayurl}</p>
+                </a>
                 <p class='description'>${ad.description}</p>
                 <img class='hidden-impression' src='${ad.impressionurl}' width='1' height='1' border='0' />
                 ${cardData ? generateCardFooter(cardData) : ''}

@@ -58,7 +58,7 @@
     }
 
     function generateListing(listing, vigilinkMetadata) {
-        const baseResultHost = getLocation(listing.displayurl).hostname;
+        const baseResultHost = getLocation(`https://${listing.displayurl}`).hostname;
         const cardData = vigilinkMetadata.find(metaData => baseResultHost.indexOf(metaData.name.toLowerCase()) != -1);
 
         return `<div class='listing ${cardData ? 'card' : ''}'>
@@ -72,7 +72,7 @@
     }
 
     function generateAd(ad, vigilinkMetadata) {
-        const baseAdHost = getLocation(ad.displayurl).hostname;
+        const baseAdHost = getLocation(`https://${ad.displayurl}`).hostname;
         const cardData = vigilinkMetadata.find(metaData => baseAdHost.indexOf(metaData.name.toLowerCase()) != -1);
 
         return `<div class='listing ad ${cardData ? 'card' : ''}'>

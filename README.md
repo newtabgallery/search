@@ -40,3 +40,7 @@ IMPORTANT - Make sure you are not on the master branch.
 11. Click "Compare and pull request"
 12. For the reviewer, select Tom or Mike.
 12. Click "Create pull request"
+
+Vigilink
+
+The secret key and API key are set in environmental variables for nginx: /etc/nginx/snippets/fastcgi-php.conf

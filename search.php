@@ -21,9 +21,10 @@
   }
 
   $ad_marketplace_params = array(
-    'partner' => 'demofeed',
+    'partner' => 'brandthunder_serp',
     'qt' => $qt,
-    'sub1' => "searchbox1",
+    'sub1' => 'serp',
+    'sub2' => 'newtabgallery',
     'v' => 7,
     'ip' => $_SERVER['REMOTE_ADDR'],
     'ua' => $_SERVER['HTTP_USER_AGENT'],
@@ -35,6 +36,6 @@
   );
 
   $ad_marketplace_curl = curl_init();
-  curl_setopt($ad_marketplace_curl, CURLOPT_URL, 'https://demofeed.ampfeed.com/xmlamp/feed?' . http_build_query($ad_marketplace_params));
+  curl_setopt($ad_marketplace_curl, CURLOPT_URL, 'https://brandthunder_serp.ampfeed.com/xmlamp/feed?' . http_build_query($ad_marketplace_params));
   $ad_marketplace_response = curl_exec($ad_marketplace_curl);
   curl_close($ad_marketplace_curl);

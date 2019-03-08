@@ -59,6 +59,9 @@ h6 {
   color: #28a745;
   font-style: italic;
   margin: 5px 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .listing .marketplace-label {

@@ -63,7 +63,9 @@
 
         return `<div class='listing ${cardData ? 'card' : ''}'>
                 <a href='${listing.clickurl}'><h3 class='title'>${listing.title}</h3></a>
-                <p class='display-url'>${listing.displayurl}</p>
+                <a href='${listing.clickurl}' class="display-url-link">
+                    <p class='display-url'>${listing.displayurl}</p>
+                </a>
                 <p class='description'>${listing.description}</p>
                 ${cardData ? generateCardFooter(cardData) : ''}
             </div>`;

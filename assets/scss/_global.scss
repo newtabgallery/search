@@ -55,6 +55,9 @@ h6 {
     color: $green;
     font-style: italic;
     margin: 5px 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
   }
 
   .marketplace-label {

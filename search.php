@@ -86,7 +86,7 @@
     'sub1' => 'serp',
     'sub2' => 'newtabgallery',
     'v' => 7,
-    'ip' => get_client_ip_address(),
+    'ip' => get_client_ip_server(),
     'ua' => $_SERVER['HTTP_USER_AGENT'],
     'rfr' => $_SERVER['HTTP_REFERER'],
     'results' => 6,

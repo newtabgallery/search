@@ -97,7 +97,7 @@
     function postResults(response, vigilinkResponse) {
         const webListings = response.weblistings && response.weblistings.weblisting ? response.weblistings.weblisting : [];
         const adListings = response.adlistings && response.adlistings.listing ? response.adlistings.listing : [];
-        const vigilinkMetadata = vigilinkResponse.items ? vigilinkResponse.items : [];
+        const vigilinkMetadata = vigilinkResponse && vigilinkResponse.items ? vigilinkResponse.items : [];
 
         $("body").addClass("search-complete");
         $("#web-listings").empty();
@@ -118,6 +118,7 @@
         });
 
         $(".masthead").addClass("background-" + Math.floor(Math.random() * 5 + 1));
+        $("body").addClass("loaded");
     }
 
     $(document).ready(onReady);

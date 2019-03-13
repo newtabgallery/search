@@ -1,4 +1,6 @@
 <?php
+  require_once('../search-utils.php');
+
   if ($_SERVER['REQUEST_METHOD'] === 'OPTIONS') {
     header('Access-Control-Allow-Origin: *');
     header('Access-Control-Allow-Methods: POST, GET, DELETE, PUT, PATCH, OPTIONS');
@@ -26,7 +28,7 @@
     'sub1' => 'serp',
     'sub2' => 'newtabgallery',
     'v' => 7,
-    'ip' => $_SERVER['REMOTE_ADDR'],
+    'ip' => get_client_ip_address(),
     'ua' => $_SERVER['HTTP_USER_AGENT'],
     'rfr' => $_SERVER['HTTP_REFERER'],
     'results' => 6,

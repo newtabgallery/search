@@ -1,5 +1,11 @@
 body {
   @include body-font;
+  opacity: 0;
+  transition: opacity 1s;
+
+  &.loaded {
+    opacity: 1;
+  }
 }
 
 h1,
@@ -65,6 +71,14 @@ h6 {
     padding: 0px 4px;
     border-radius: 8px;
     margin-right: 5px;
+  }
+}
+
+.icon-row {
+  padding-top: 10px;
+
+  a {
+    margin: 0 2px;
   }
 }
 

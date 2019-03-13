@@ -8,6 +8,13 @@
 body {
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: .8em;
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+body.loaded {
+  opacity: 1;
 }
 
 h1,
@@ -69,6 +76,14 @@ h6 {
   padding: 0px 4px;
   border-radius: 8px;
   margin-right: 5px;
+}
+
+.icon-row {
+  padding-top: 10px;
+}
+
+.icon-row a {
+  margin: 0 2px;
 }
 
 .hidden-impression {

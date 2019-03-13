@@ -1,6 +1,6 @@
 <?php
 $title = 'ApexLegends';
-
+$extensionID = 'afdphlpchedbkafdnoaocaalkhilmngf';
 // NewTabGallery: Edit these to change the rendered background images
 $background_image_style = "
 <style>

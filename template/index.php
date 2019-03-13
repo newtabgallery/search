@@ -1,3 +1,24 @@
+<?php
+  require_once('../search-utils.php');
+
+  $ad_marketplace_params = array(
+    'partner' => 'brandthunder_tiles',
+    'qt' => $qt,
+    'sub1' => '10004',
+    'sub2' => 'newtabgallery',
+    'v' => 1.2,
+    'ip' => get_client_ip_server(),
+    'ua' => $_SERVER['HTTP_USER_AGENT'],
+    'rfr' => $_SERVER['HTTP_REFERER'],
+    'results' => 20,
+    'out' => 'json',
+  );
+
+  $ad_marketplace_response = file_get_contents('https://brandthunder_tiles.tiles.ampfeed.com/tiles?' . http_build_query($ad_marketplace_params));
+  $ad_marketplace_json = json_decode($ad_marketplace_response, true);
+
+  $tiles = $ad_marketplace_json["tiles"];
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,21 +47,26 @@
 <body>
   <!-- Masthead -->
   <header class="masthead text-white text-center">
-    <div class="overlay"></div>
+    <div class="overlay">
+    </div>
     <div class="container">
       <div class="row">
         <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
           <form id="search-form">
             <div class="form-row">
-                <div class="col-12 col-md-9 mb-2 mb-md-0">
-                  <input id="search-input" type="search" class="form-control form-control-lg" placeholder="Search">
-                </div>
-                <div class="col-12 col-md-3">
-                  <button id="search-submit" type="submit" class="btn btn-block btn-lg btn-primary">
-                    <i class="fas fa-search"></i>
-                  </button>
-                </div>
+              <div class="col-12 col-md-9 mb-2 mb-md-0">
+                <input id="search-input" type="search" class="form-control form-control-lg" placeholder="Search">
               </div>
+              <div class="col-12 col-md-3">
+                <button id="search-submit" type="submit" class="btn btn-block btn-lg btn-primary">
+                  <i class="fas fa-search">
+                  </i>
+                </button>
+              </div>
+              <div class="icon-row col-12">
+                <?php generate_search_tiles($tiles); ?>
+              </div>
+            </div>
           </form>
         </div>
       </div>

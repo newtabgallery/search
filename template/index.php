@@ -60,8 +60,8 @@
   }
 
   $qt = '';
-  if (isset($_POST["q"]) && !empty($_POST["q"])) {
-    $qt = $_POST["q"];
+  if (isset($_GET["q"]) && !empty($_GET["q"])) {
+    $qt = $_GET["q"];
   } else {
     return;
   }

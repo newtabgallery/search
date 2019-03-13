@@ -1,5 +1,5 @@
 <?php
-  require_once('../search-utils.php');
+  require_once($_SERVER['DOCUMENT_ROOT'].'/search-utils.php');
 
   $ad_marketplace_params = array(
     'partner' => 'brandthunder_tiles',

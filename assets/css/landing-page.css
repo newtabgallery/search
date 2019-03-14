@@ -29,8 +29,12 @@ h6 {
   font-size: 18px;
 }
 
+.results {
+  margin: 20px 0;
+}
+
 .listing {
-  margin: 30px 0;
+  margin: 15px 0;
 }
 
 .listing.card {
@@ -58,14 +62,17 @@ h6 {
   vertical-align: middle;
 }
 
+.listing .title {
+  margin: 0;
+}
+
 .listing .display-url-link {
   text-decoration: none;
 }
 
 .listing .display-url {
   color: #28a745;
-  font-style: italic;
-  margin: 5px 0;
+  margin: 0;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;

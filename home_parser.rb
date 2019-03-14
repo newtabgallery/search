@@ -30,8 +30,7 @@ include('../template/index.php');
     File.write("#{base_home_directory}/index.php", template_index_contents)
 end
 
-directory = tab_page_directories.first
-# tab_page_directories.each do |directory|
+tab_page_directories.each do |directory|
     base_home_directory = directory.split('/').last
     home_directory_images = Dir.glob("#{directory}/*").select { |file| File.file?(file) && !file.include?("icon") && ( File.extname(".jpg") || File.extname("jpeg") || File.extname("png") || File.extname("gif"))  }
     
@@ -45,7 +44,4 @@ directory = tab_page_directories.first
 
 
     generate_template_index(base_home_directory, search_title, home_directory_images)
-# end
-# Dir.pwd
-
-# .split('/').last
+end

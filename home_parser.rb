@@ -27,7 +27,7 @@ $background_image_style = \"
     template_index_contents += "</style>
 \";
 
-include('../template/index.php');
+include('../_template/index.php');
 ?>"
     
     File.write("#{base_home_directory}/index.php", template_index_contents)

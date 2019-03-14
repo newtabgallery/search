@@ -31,5 +31,5 @@ $background_image_style = "
 </style>
 ";
 
-include('../template/index.php');
+include('../_template/index.php');
 ?>

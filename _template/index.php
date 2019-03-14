@@ -6,20 +6,18 @@
     $qt = $_GET["q"];
   }
 
+  $ad_marketplace_partner = 'brandthunder_serp';
   $ad_marketplace_params = array(
-    'partner' => 'brandthunder_serp',
+    'partner' => $ad_marketplace_partner, 
     'qt' => $qt,
     'sub1' => 'serp',
     'sub2' => 'newtabgallery',
-    'v' => 1.2,
+    'v' => '1.2',
     'ip' => get_client_ip_server(),
     'ua' => $_SERVER['HTTP_USER_AGENT'],
-    'rfr' => $_SERVER['HTTP_REFERER'],
-    'results' => 20,
-    'out' => 'json',
+    'rfr' => $_SERVER['HTTP_REFERER']
   );
-
-  $ad_marketplace_response = file_get_contents('https://brandthunder_serp.tiles.ampfeed.com/tiles?' . http_build_query($ad_marketplace_params));
+  $ad_marketplace_response = file_get_contents('https://' . $ad_marketplace_partner . '.tiles.ampfeed.com/tiles?' . http_build_query($ad_marketplace_params));
   $ad_marketplace_json = json_decode($ad_marketplace_response, true);
 
   $tiles = $ad_marketplace_json["tiles"];

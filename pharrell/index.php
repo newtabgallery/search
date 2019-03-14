@@ -2,7 +2,7 @@
 $title = "Pharrell";
 
 // NewTabGallery: Edit these to change the rendered background images
-$background_image_count = 11;
+$background_image_count = 10;
 $background_image_style = "
 <style>
   header.masthead.background-1 {
@@ -18,34 +18,30 @@ $background_image_style = "
   }
 
   header.masthead.background-4 {
-    background-image: url('https://home.newtabgallery.com/pharrell/index.php')
-  }
-
-  header.masthead.background-5 {
     background-image: url('https://home.newtabgallery.com/pharrell/Pharrell-pharrell-40339959-3840-2160.jpg')
   }
 
-  header.masthead.background-6 {
+  header.masthead.background-5 {
     background-image: url('https://home.newtabgallery.com/pharrell/pharrell-williams-celebrity-wallpaper-photos-60981-62786-hd-wallpapers.jpg')
   }
 
-  header.masthead.background-7 {
+  header.masthead.background-6 {
     background-image: url('https://home.newtabgallery.com/pharrell/pharrell-williams-face-wallpaper-60977-62782-hd-wallpapers.jpg')
   }
 
-  header.masthead.background-8 {
+  header.masthead.background-7 {
     background-image: url('https://home.newtabgallery.com/pharrell/8mLr2f4.jpg')
   }
 
-  header.masthead.background-9 {
+  header.masthead.background-8 {
     background-image: url('https://home.newtabgallery.com/pharrell/Uu8qIP.jpg')
   }
 
-  header.masthead.background-10 {
+  header.masthead.background-9 {
     background-image: url('https://home.newtabgallery.com/pharrell/Pharrell-Williams-Sexy-Wallpapers.jpg')
   }
 
-  header.masthead.background-11 {
+  header.masthead.background-10 {
     background-image: url('https://home.newtabgallery.com/pharrell/1.jpg')
   }
 </style>

@@ -2,7 +2,7 @@
 $title = "Donut County";
 
 // NewTabGallery: Edit these to change the rendered background images
-$background_image_count = 12;
+$background_image_count = 11;
 $background_image_style = "
 <style>
   header.masthead.background-1 {
@@ -26,30 +26,26 @@ $background_image_style = "
   }
 
   header.masthead.background-6 {
-    background-image: url('https://home.newtabgallery.com/donutcounty/index.php')
-  }
-
-  header.masthead.background-7 {
     background-image: url('https://home.newtabgallery.com/donutcounty/ss_9cdb67986354f1e941cf17b3548ebf7a419c775b.1920x1080.jpg')
   }
 
-  header.masthead.background-8 {
+  header.masthead.background-7 {
     background-image: url('https://home.newtabgallery.com/donutcounty/Donut-County_20180907083139.jpg')
   }
 
-  header.masthead.background-9 {
+  header.masthead.background-8 {
     background-image: url('https://home.newtabgallery.com/donutcounty/1537280605-750723795.png')
   }
 
-  header.masthead.background-10 {
+  header.masthead.background-9 {
     background-image: url('https://home.newtabgallery.com/donutcounty/donut-county-screen-03-ps4-us-08dec17.jpeg')
   }
 
-  header.masthead.background-11 {
+  header.masthead.background-10 {
     background-image: url('https://home.newtabgallery.com/donutcounty/1111.jpg')
   }
 
-  header.masthead.background-12 {
+  header.masthead.background-11 {
     background-image: url('https://home.newtabgallery.com/donutcounty/Donut_County_20180824163542.jpg')
   }
 </style>

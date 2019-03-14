@@ -2,7 +2,7 @@
 $title = "Disney Crossy Rd";
 
 // NewTabGallery: Edit these to change the rendered background images
-$background_image_count = 8;
+$background_image_count = 7;
 $background_image_style = "
 <style>
   header.masthead.background-1 {
@@ -14,26 +14,22 @@ $background_image_style = "
   }
 
   header.masthead.background-3 {
-    background-image: url('https://home.newtabgallery.com/disneycrossy/index.php')
-  }
-
-  header.masthead.background-4 {
     background-image: url('https://home.newtabgallery.com/disneycrossy/MAIN.jpg')
   }
 
-  header.masthead.background-5 {
+  header.masthead.background-4 {
     background-image: url('https://home.newtabgallery.com/disneycrossy/00.jpg')
   }
 
-  header.masthead.background-6 {
+  header.masthead.background-5 {
     background-image: url('https://home.newtabgallery.com/disneycrossy/maxresdefault.jpg')
   }
 
-  header.masthead.background-7 {
+  header.masthead.background-6 {
     background-image: url('https://home.newtabgallery.com/disneycrossy/maxresdefault%20(1).jpg')
   }
 
-  header.masthead.background-8 {
+  header.masthead.background-7 {
     background-image: url('https://home.newtabgallery.com/disneycrossy/GkyRp06.png')
   }
 </style>

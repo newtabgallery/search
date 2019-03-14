@@ -2,7 +2,7 @@
 $title = "Chive";
 
 // NewTabGallery: Edit these to change the rendered background images
-$background_image_count = 9;
+$background_image_count = 8;
 $background_image_style = "
 <style>
   header.masthead.background-1 {
@@ -14,30 +14,26 @@ $background_image_style = "
   }
 
   header.masthead.background-3 {
-    background-image: url('https://home.newtabgallery.com/chive/index.php')
-  }
-
-  header.masthead.background-4 {
     background-image: url('https://home.newtabgallery.com/chive/thechive_hd_black_pink_wallpaper_by_suggesteez-d5ipm05.jpg')
   }
 
-  header.masthead.background-5 {
+  header.masthead.background-4 {
     background-image: url('https://home.newtabgallery.com/chive/main2.jpg')
   }
 
-  header.masthead.background-6 {
+  header.masthead.background-5 {
     background-image: url('https://home.newtabgallery.com/chive/thechive_hd_firefighter_kcco_navy_blue_wallpaper_by_suggesteez-d5ipnm3.jpg')
   }
 
-  header.masthead.background-7 {
+  header.masthead.background-6 {
     background-image: url('https://home.newtabgallery.com/chive/thechive_hd_black_wallpaper_by_suggesteez-d5ipm8s.jpg')
   }
 
-  header.masthead.background-8 {
+  header.masthead.background-7 {
     background-image: url('https://home.newtabgallery.com/chive/2eb5ff93a3a4c2c9c736998db5fdddad.jpg')
   }
 
-  header.masthead.background-9 {
+  header.masthead.background-8 {
     background-image: url('https://home.newtabgallery.com/chive/330815.jpg')
   }
 </style>

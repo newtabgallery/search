@@ -2,7 +2,7 @@
 $title = "A Trak";
 
 // NewTabGallery: Edit these to change the rendered background images
-$background_image_count = 11;
+$background_image_count = 10;
 $background_image_style = "
 <style>
   header.masthead.background-1 {
@@ -22,30 +22,26 @@ $background_image_style = "
   }
 
   header.masthead.background-5 {
-    background-image: url('https://home.newtabgallery.com/atrak/index.php')
-  }
-
-  header.masthead.background-6 {
     background-image: url('https://home.newtabgallery.com/atrak/e40edd0cfa.jpg')
   }
 
-  header.masthead.background-7 {
+  header.masthead.background-6 {
     background-image: url('https://home.newtabgallery.com/atrak/A-Trak%20HD%20Desktop.jpg')
   }
 
-  header.masthead.background-8 {
+  header.masthead.background-7 {
     background-image: url('https://home.newtabgallery.com/atrak/10186.jpg')
   }
 
-  header.masthead.background-9 {
+  header.masthead.background-8 {
     background-image: url('https://home.newtabgallery.com/atrak/a-trak-508c68beac84f.jpg')
   }
 
-  header.masthead.background-10 {
+  header.masthead.background-9 {
     background-image: url('https://home.newtabgallery.com/atrak/1.jpg')
   }
 
-  header.masthead.background-11 {
+  header.masthead.background-10 {
     background-image: url('https://home.newtabgallery.com/atrak/475124.jpg')
   }
 </style>

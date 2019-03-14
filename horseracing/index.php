@@ -2,7 +2,7 @@
 $title = "Horse Racing";
 
 // NewTabGallery: Edit these to change the rendered background images
-$background_image_count = 11;
+$background_image_count = 10;
 $background_image_style = "
 <style>
   header.masthead.background-1 {
@@ -18,34 +18,30 @@ $background_image_style = "
   }
 
   header.masthead.background-4 {
-    background-image: url('https://home.newtabgallery.com/horseracing/index.php')
-  }
-
-  header.masthead.background-5 {
     background-image: url('https://home.newtabgallery.com/horseracing/4_top-10-horse-jockeys_XL.jpg')
   }
 
-  header.masthead.background-6 {
+  header.masthead.background-5 {
     background-image: url('https://home.newtabgallery.com/horseracing/Horse-Racing-Southwell-009.jpg')
   }
 
-  header.masthead.background-7 {
+  header.masthead.background-6 {
     background-image: url('https://home.newtabgallery.com/horseracing/SARAH-SIS-horse-racing-presque-isle.jpg')
   }
 
-  header.masthead.background-8 {
+  header.masthead.background-7 {
     background-image: url('https://home.newtabgallery.com/horseracing/Horseracing_Churchill_Downs.jpg')
   }
 
-  header.masthead.background-9 {
+  header.masthead.background-8 {
     background-image: url('https://home.newtabgallery.com/horseracing/data-original.jpg')
   }
 
-  header.masthead.background-10 {
+  header.masthead.background-9 {
     background-image: url('https://home.newtabgallery.com/horseracing/Listing-Horse-Racing-Credit-Fairmont-Park3.jpg')
   }
 
-  header.masthead.background-11 {
+  header.masthead.background-10 {
     background-image: url('https://home.newtabgallery.com/horseracing/crop_exact_GettyImages-970629916.jpg')
   }
 </style>

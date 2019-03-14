@@ -2,7 +2,7 @@
 $title = "Notd";
 
 // NewTabGallery: Edit these to change the rendered background images
-$background_image_count = 12;
+$background_image_count = 11;
 $background_image_style = "
 <style>
   header.masthead.background-1 {
@@ -26,30 +26,26 @@ $background_image_style = "
   }
 
   header.masthead.background-6 {
-    background-image: url('https://home.newtabgallery.com/notd/index.php')
-  }
-
-  header.masthead.background-7 {
     background-image: url('https://home.newtabgallery.com/notd/maxresdefault.jpg')
   }
 
-  header.masthead.background-8 {
+  header.masthead.background-7 {
     background-image: url('https://home.newtabgallery.com/notd/notd-bea-miller.jpg')
   }
 
-  header.masthead.background-9 {
+  header.masthead.background-8 {
     background-image: url('https://home.newtabgallery.com/notd/0000.jpg')
   }
 
-  header.masthead.background-10 {
+  header.masthead.background-9 {
     background-image: url('https://home.newtabgallery.com/notd/maxresdefault%20(1).jpg')
   }
 
-  header.masthead.background-11 {
+  header.masthead.background-10 {
     background-image: url('https://home.newtabgallery.com/notd/maxresdefault%20(2).jpg')
   }
 
-  header.masthead.background-12 {
+  header.masthead.background-11 {
     background-image: url('https://home.newtabgallery.com/notd/Notd-Summer-Of-Love-2018.jpg')
   }
 </style>

@@ -2,7 +2,7 @@
 $title = "Reign of the Supermen";
 
 // NewTabGallery: Edit these to change the rendered background images
-$background_image_count = 9;
+$background_image_count = 8;
 $background_image_style = "
 <style>
   header.masthead.background-1 {
@@ -18,26 +18,22 @@ $background_image_style = "
   }
 
   header.masthead.background-4 {
-    background-image: url('https://home.newtabgallery.com/reignsupermen/index.php')
-  }
-
-  header.masthead.background-5 {
     background-image: url('https://home.newtabgallery.com/reignsupermen/main.jpg')
   }
 
-  header.masthead.background-6 {
+  header.masthead.background-5 {
     background-image: url('https://home.newtabgallery.com/reignsupermen/Reign-of-the-Supermen-3.jpg')
   }
 
-  header.masthead.background-7 {
+  header.masthead.background-6 {
     background-image: url('https://home.newtabgallery.com/reignsupermen/reignofthesupermen.jpg')
   }
 
-  header.masthead.background-8 {
+  header.masthead.background-7 {
     background-image: url('https://home.newtabgallery.com/reignsupermen/8888.jpg')
   }
 
-  header.masthead.background-9 {
+  header.masthead.background-8 {
     background-image: url('https://home.newtabgallery.com/reignsupermen/reign_of_the_supermen.png')
   }
 </style>

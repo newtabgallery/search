@@ -2,7 +2,7 @@
 $title = "Dreezy";
 
 // NewTabGallery: Edit these to change the rendered background images
-$background_image_count = 9;
+$background_image_count = 8;
 $background_image_style = "
 <style>
   header.masthead.background-1 {
@@ -26,18 +26,14 @@ $background_image_style = "
   }
 
   header.masthead.background-6 {
-    background-image: url('https://home.newtabgallery.com/dreezy/index.php')
-  }
-
-  header.masthead.background-7 {
     background-image: url('https://home.newtabgallery.com/dreezy/main.jpg')
   }
 
-  header.masthead.background-8 {
+  header.masthead.background-7 {
     background-image: url('https://home.newtabgallery.com/dreezy/Screen-Shot-2016-10-18-at-2.30.12-PM.png')
   }
 
-  header.masthead.background-9 {
+  header.masthead.background-8 {
     background-image: url('https://home.newtabgallery.com/dreezy/dreezy-oct-2018-billboard-1548.jpg')
   }
 </style>

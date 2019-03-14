@@ -2,7 +2,7 @@
 $title = "Sea of Thieves";
 
 // NewTabGallery: Edit these to change the rendered background images
-$background_image_count = 10;
+$background_image_count = 9;
 $background_image_style = "
 <style>
   header.masthead.background-1 {
@@ -14,34 +14,30 @@ $background_image_style = "
   }
 
   header.masthead.background-3 {
-    background-image: url('https://home.newtabgallery.com/seaofthieves/index.php')
-  }
-
-  header.masthead.background-4 {
     background-image: url('https://home.newtabgallery.com/seaofthieves/MAIN.jpg')
   }
 
-  header.masthead.background-5 {
+  header.masthead.background-4 {
     background-image: url('https://home.newtabgallery.com/seaofthieves/3368691-3-25-2018_10-05-30_pm.png')
   }
 
-  header.masthead.background-6 {
+  header.masthead.background-5 {
     background-image: url('https://home.newtabgallery.com/seaofthieves/sea-of-thieves-pc-xbox-one-wallpaper-4.jpg')
   }
 
-  header.masthead.background-7 {
+  header.masthead.background-6 {
     background-image: url('https://home.newtabgallery.com/seaofthieves/hcvdhhmd6vq01.jpg')
   }
 
-  header.masthead.background-8 {
+  header.masthead.background-7 {
     background-image: url('https://home.newtabgallery.com/seaofthieves/1526387399_d5cad71b-e7f5-4d16-87d3-6ec1070664d9.jpg')
   }
 
-  header.masthead.background-9 {
+  header.masthead.background-8 {
     background-image: url('https://home.newtabgallery.com/seaofthieves/Sea_Thieves_GC2017_4K005-2060x1159.jpg')
   }
 
-  header.masthead.background-10 {
+  header.masthead.background-9 {
     background-image: url('https://home.newtabgallery.com/seaofthieves/0.jpg')
   }
 </style>

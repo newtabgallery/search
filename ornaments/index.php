@@ -2,7 +2,7 @@
 $title = "ornaments";
 
 // NewTabGallery: Edit these to change the rendered background images
-$background_image_count = 9;
+$background_image_count = 7;
 $background_image_style = "
 <style>
   header.masthead.background-1 {
@@ -14,30 +14,22 @@ $background_image_style = "
   }
 
   header.masthead.background-3 {
-    background-image: url('https://home.newtabgallery.com/ornaments/index.php')
-  }
-
-  header.masthead.background-4 {
     background-image: url('https://home.newtabgallery.com/ornaments/americana-holiday-christmas-glass-ornaments-set-of-24-5661.png')
   }
 
-  header.masthead.background-5 {
+  header.masthead.background-4 {
     background-image: url('https://home.newtabgallery.com/ornaments/Closeup-of-Red-Ball-Ornaments-on-Christmas-Tree.jpg')
   }
 
-  header.masthead.background-6 {
+  header.masthead.background-5 {
     background-image: url('https://home.newtabgallery.com/ornaments/Red-Gold-Ball-Ornaments-on-Christmas-Tree.jpg')
   }
 
-  header.masthead.background-7 {
+  header.masthead.background-6 {
     background-image: url('https://home.newtabgallery.com/ornaments/ornament-2468572_1920-1.jpg')
   }
 
-  header.masthead.background-8 {
-    background-image: url('https://home.newtabgallery.com/ornaments/KNITTED_ORNAMENTS_3.JPG')
-  }
-
-  header.masthead.background-9 {
+  header.masthead.background-7 {
     background-image: url('https://home.newtabgallery.com/ornaments/DIY%20Wood%20Slice%20Snowmen%20Ornaments%20hero_6.jpg')
   }
 </style>

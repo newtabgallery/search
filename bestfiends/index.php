@@ -2,7 +2,7 @@
 $title = "Best Fiends";
 
 // NewTabGallery: Edit these to change the rendered background images
-$background_image_count = 7;
+$background_image_count = 6;
 $background_image_style = "
 <style>
   header.masthead.background-1 {
@@ -18,18 +18,14 @@ $background_image_style = "
   }
 
   header.masthead.background-4 {
-    background-image: url('https://home.newtabgallery.com/bestfiends/index.php')
-  }
-
-  header.masthead.background-5 {
     background-image: url('https://home.newtabgallery.com/bestfiends/Best-Fiends-Forever.jpg')
   }
 
-  header.masthead.background-6 {
+  header.masthead.background-5 {
     background-image: url('https://home.newtabgallery.com/bestfiends/boot_camp_keyart_logo_overlay_03-1.png')
   }
 
-  header.masthead.background-7 {
+  header.masthead.background-6 {
     background-image: url('https://home.newtabgallery.com/bestfiends/0000.jpeg')
   }
 </style>

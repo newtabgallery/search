@@ -2,7 +2,7 @@
 $title = "Poly Bridge";
 
 // NewTabGallery: Edit these to change the rendered background images
-$background_image_count = 9;
+$background_image_count = 8;
 $background_image_style = "
 <style>
   header.masthead.background-1 {
@@ -10,34 +10,30 @@ $background_image_style = "
   }
 
   header.masthead.background-2 {
-    background-image: url('https://home.newtabgallery.com/polybridge/index.php')
-  }
-
-  header.masthead.background-3 {
     background-image: url('https://home.newtabgallery.com/polybridge/H2x1_NSwitchDS_PolyBridge.jpg')
   }
 
-  header.masthead.background-4 {
+  header.masthead.background-3 {
     background-image: url('https://home.newtabgallery.com/polybridge/MAIN.jpg')
   }
 
-  header.masthead.background-5 {
+  header.masthead.background-4 {
     background-image: url('https://home.newtabgallery.com/polybridge/Screenshot_01.png')
   }
 
-  header.masthead.background-6 {
+  header.masthead.background-5 {
     background-image: url('https://home.newtabgallery.com/polybridge/2015-07-01_00001.jpg')
   }
 
-  header.masthead.background-7 {
+  header.masthead.background-6 {
     background-image: url('https://home.newtabgallery.com/polybridge/Screenshot_06.png')
   }
 
-  header.masthead.background-8 {
+  header.masthead.background-7 {
     background-image: url('https://home.newtabgallery.com/polybridge/Screenshot_05.png')
   }
 
-  header.masthead.background-9 {
+  header.masthead.background-8 {
     background-image: url('https://home.newtabgallery.com/polybridge/tOaMdgl.jpeg')
   }
 </style>

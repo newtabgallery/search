@@ -2,7 +2,7 @@
 $title = "Going Bad";
 
 // NewTabGallery: Edit these to change the rendered background images
-$background_image_count = 7;
+$background_image_count = 6;
 $background_image_style = "
 <style>
   header.masthead.background-1 {
@@ -22,14 +22,10 @@ $background_image_style = "
   }
 
   header.masthead.background-5 {
-    background-image: url('https://home.newtabgallery.com/goingbad/index.php')
-  }
-
-  header.masthead.background-6 {
     background-image: url('https://home.newtabgallery.com/goingbad/meek-mill-championships-number-one-1544536067-compressed.jpg')
   }
 
-  header.masthead.background-7 {
+  header.masthead.background-6 {
     background-image: url('https://home.newtabgallery.com/goingbad/1471774372-drake-meek-mill-feud.jpg')
   }
 </style>

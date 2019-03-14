@@ -2,7 +2,7 @@
 $title = "Galaga";
 
 // NewTabGallery: Edit these to change the rendered background images
-$background_image_count = 7;
+$background_image_count = 6;
 $background_image_style = "
 <style>
   header.masthead.background-1 {
@@ -14,22 +14,18 @@ $background_image_style = "
   }
 
   header.masthead.background-3 {
-    background-image: url('https://home.newtabgallery.com/galaga/index.php')
-  }
-
-  header.masthead.background-4 {
     background-image: url('https://home.newtabgallery.com/galaga/0000.png')
   }
 
-  header.masthead.background-5 {
+  header.masthead.background-4 {
     background-image: url('https://home.newtabgallery.com/galaga/SI_WiiUVC_Galaga_image1600w.jpg')
   }
 
-  header.masthead.background-6 {
+  header.masthead.background-5 {
     background-image: url('https://home.newtabgallery.com/galaga/573254.jpg')
   }
 
-  header.masthead.background-7 {
+  header.masthead.background-6 {
     background-image: url('https://home.newtabgallery.com/galaga/55568-Galaga_(Europe)-1461765637.jpg')
   }
 </style>

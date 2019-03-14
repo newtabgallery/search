@@ -2,7 +2,7 @@
 $title = "Ally Brooke";
 
 // NewTabGallery: Edit these to change the rendered background images
-$background_image_count = 10;
+$background_image_count = 9;
 $background_image_style = "
 <style>
   header.masthead.background-1 {
@@ -18,30 +18,26 @@ $background_image_style = "
   }
 
   header.masthead.background-4 {
-    background-image: url('https://home.newtabgallery.com/allybrooke/index.php')
-  }
-
-  header.masthead.background-5 {
     background-image: url('https://home.newtabgallery.com/allybrooke/ally-brooke-Fusion-Festival-2018-billboard-1548.jpg')
   }
 
-  header.masthead.background-6 {
+  header.masthead.background-5 {
     background-image: url('https://home.newtabgallery.com/allybrooke/Ally%20Brooke%20Hernandez%20Swims.jpg')
   }
 
-  header.masthead.background-7 {
+  header.masthead.background-6 {
     background-image: url('https://home.newtabgallery.com/allybrooke/Ally_Brooke-_Photo_2.jpg')
   }
 
-  header.masthead.background-8 {
+  header.masthead.background-7 {
     background-image: url('https://home.newtabgallery.com/allybrooke/mian.jpg')
   }
 
-  header.masthead.background-9 {
+  header.masthead.background-8 {
     background-image: url('https://home.newtabgallery.com/allybrooke/ally-brooke-694353278.jpg')
   }
 
-  header.masthead.background-10 {
+  header.masthead.background-9 {
     background-image: url('https://home.newtabgallery.com/allybrooke/Ally-Brooke-2.jpg')
   }
 </style>

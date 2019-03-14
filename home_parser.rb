@@ -1,6 +1,9 @@
 require 'cgi'
 
+search_page_directories = Dir.glob("*").select { |file| File.directory?(file) }
+puts "Found #{search_page_directories.count} Search Pages"
 tab_page_directories = Dir.glob("../home/*").select { |file| File.directory?(file) }
+puts "Found #{tab_page_directories.count} Home Pages"
 
 def generate_template_index(base_home_directory, search_title, background_images)
     Dir.mkdir(base_home_directory) unless Dir.exist?(base_home_directory)
@@ -32,16 +35,18 @@ end
 
 tab_page_directories.each do |directory|
     base_home_directory = directory.split('/').last
-    home_directory_images = Dir.glob("#{directory}/*").select { |file| File.file?(file) && !file.include?("icon") && ( File.extname(".jpg") || File.extname("jpeg") || File.extname("png") || File.extname("gif"))  }
+    home_directory_images = Dir.glob("#{directory}/*").select { |file| File.file?(file) && !file.include?("icon") && ( File.extname(file) == ".jpg" || File.extname(file) == ".jpeg" || File.extname(file) == ".png" || File.extname(file) == ".gif" )  }
     
-    index = File.open("#{directory}/index.php", "r")
-    search_title = ''
-    index.each_line do |line|
-        if line.include?("$title") 
-            search_title = line[/\$title = '(.*)';/, 1]
+    if File.exist?("#{directory}/index.php")
+        index = File.open("#{directory}/index.php", "r")
+        search_title = ''
+        index.each_line do |line|
+            if line.include?("$title") 
+                search_title = line[/\$title = '(.*)';/, 1]
+            end
         end
+        generate_template_index(base_home_directory, search_title, home_directory_images)
+    else
+        puts "Count not create template for #{directory}"
     end
-
-
-    generate_template_index(base_home_directory, search_title, home_directory_images)
 end

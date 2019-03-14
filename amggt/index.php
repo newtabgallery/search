@@ -2,7 +2,7 @@
 $title = "Mercedes AMG GT";
 
 // NewTabGallery: Edit these to change the rendered background images
-$background_image_count = 7;
+$background_image_count = 6;
 $background_image_style = "
 <style>
   header.masthead.background-1 {
@@ -18,18 +18,14 @@ $background_image_style = "
   }
 
   header.masthead.background-4 {
-    background-image: url('https://home.newtabgallery.com/amggt/index.php')
-  }
-
-  header.masthead.background-5 {
     background-image: url('https://home.newtabgallery.com/amggt/5aa0124b44c8f.jpeg')
   }
 
-  header.masthead.background-6 {
+  header.masthead.background-5 {
     background-image: url('https://home.newtabgallery.com/amggt/maxresdefault.jpg')
   }
 
-  header.masthead.background-7 {
+  header.masthead.background-6 {
     background-image: url('https://home.newtabgallery.com/amggt/2019-Mercedes-AMG-GT63-S-4-Door-V2-1080.jpg')
   }
 </style>

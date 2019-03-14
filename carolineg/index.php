@@ -2,7 +2,7 @@
 $title = "Caroline Gardner";
 
 // NewTabGallery: Edit these to change the rendered background images
-$background_image_count = 7;
+$background_image_count = 6;
 $background_image_style = "
 <style>
   header.masthead.background-1 {
@@ -18,18 +18,14 @@ $background_image_style = "
   }
 
   header.masthead.background-4 {
-    background-image: url('https://home.newtabgallery.com/carolineg/index.php')
-  }
-
-  header.masthead.background-5 {
     background-image: url('https://home.newtabgallery.com/carolineg/main.jpg')
   }
 
-  header.masthead.background-6 {
+  header.masthead.background-5 {
     background-image: url('https://home.newtabgallery.com/carolineg/caroline%20gardner%20free%20desktop%20wallpaper%20ddd005%20perfect%20is%20boring.jpg')
   }
 
-  header.masthead.background-7 {
+  header.masthead.background-6 {
     background-image: url('https://home.newtabgallery.com/carolineg/caroline%20gardner%20free%20desktop%20wallpaper%20ddd003%20hearts.jpg')
   }
 </style>

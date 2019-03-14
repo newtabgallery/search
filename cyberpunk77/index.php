@@ -2,7 +2,7 @@
 $title = "Cyberpunk 77";
 
 // NewTabGallery: Edit these to change the rendered background images
-$background_image_count = 11;
+$background_image_count = 10;
 $background_image_style = "
 <style>
   header.masthead.background-1 {
@@ -26,26 +26,22 @@ $background_image_style = "
   }
 
   header.masthead.background-6 {
-    background-image: url('https://home.newtabgallery.com/cyberpunk77/index.php')
-  }
-
-  header.masthead.background-7 {
     background-image: url('https://home.newtabgallery.com/cyberpunk77/11.jpeg')
   }
 
-  header.masthead.background-8 {
+  header.masthead.background-7 {
     background-image: url('https://home.newtabgallery.com/cyberpunk77/00.jpg')
   }
 
-  header.masthead.background-9 {
+  header.masthead.background-8 {
     background-image: url('https://home.newtabgallery.com/cyberpunk77/Cyberpunk2077.jpg')
   }
 
-  header.masthead.background-10 {
+  header.masthead.background-9 {
     background-image: url('https://home.newtabgallery.com/cyberpunk77/cyberpunk-2077.png')
   }
 
-  header.masthead.background-11 {
+  header.masthead.background-10 {
     background-image: url('https://home.newtabgallery.com/cyberpunk77/Cyberpunk-2077-2.jpg')
   }
 </style>

@@ -2,7 +2,7 @@
 $title = "Tekashi";
 
 // NewTabGallery: Edit these to change the rendered background images
-$background_image_count = 10;
+$background_image_count = 9;
 $background_image_style = "
 <style>
   header.masthead.background-1 {
@@ -22,26 +22,22 @@ $background_image_style = "
   }
 
   header.masthead.background-5 {
-    background-image: url('https://home.newtabgallery.com/tekashi/index.php')
-  }
-
-  header.masthead.background-6 {
     background-image: url('https://home.newtabgallery.com/tekashi/180726-zimmerman-minaj-Tekashi69-tease_lv0wql.jpg')
   }
 
-  header.masthead.background-7 {
+  header.masthead.background-6 {
     background-image: url('https://home.newtabgallery.com/tekashi/brat__original.jpeg')
   }
 
-  header.masthead.background-8 {
+  header.masthead.background-7 {
     background-image: url('https://home.newtabgallery.com/tekashi/tekashi-6ix9ine.jpg')
   }
 
-  header.masthead.background-9 {
+  header.masthead.background-8 {
     background-image: url('https://home.newtabgallery.com/tekashi/6ix9ine.jpg')
   }
 
-  header.masthead.background-10 {
+  header.masthead.background-9 {
     background-image: url('https://home.newtabgallery.com/tekashi/5b8eba71780d83d163cf4084.jpeg')
   }
 </style>

@@ -2,7 +2,7 @@
 $title = "Ava Max";
 
 // NewTabGallery: Edit these to change the rendered background images
-$background_image_count = 8;
+$background_image_count = 7;
 $background_image_style = "
 <style>
   header.masthead.background-1 {
@@ -18,22 +18,18 @@ $background_image_style = "
   }
 
   header.masthead.background-4 {
-    background-image: url('https://home.newtabgallery.com/avamax/index.php')
-  }
-
-  header.masthead.background-5 {
     background-image: url('https://home.newtabgallery.com/avamax/tdy_concert_ava_max_190125.jpg')
   }
 
-  header.masthead.background-6 {
+  header.masthead.background-5 {
     background-image: url('https://home.newtabgallery.com/avamax/main.jpg')
   }
 
-  header.masthead.background-7 {
+  header.masthead.background-6 {
     background-image: url('https://home.newtabgallery.com/avamax/MAIN1.jpg')
   }
 
-  header.masthead.background-8 {
+  header.masthead.background-7 {
     background-image: url('https://home.newtabgallery.com/avamax/naom_5c59ca3f20bce.jpg')
   }
 </style>

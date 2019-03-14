@@ -2,7 +2,7 @@
 $title = "Mega Man 11";
 
 // NewTabGallery: Edit these to change the rendered background images
-$background_image_count = 12;
+$background_image_count = 11;
 $background_image_style = "
 <style>
   header.masthead.background-1 {
@@ -26,30 +26,26 @@ $background_image_style = "
   }
 
   header.masthead.background-6 {
-    background-image: url('https://home.newtabgallery.com/megaman11/index.php')
-  }
-
-  header.masthead.background-7 {
     background-image: url('https://home.newtabgallery.com/megaman11/pz617ml4jcd11.jpg')
   }
 
-  header.masthead.background-8 {
+  header.masthead.background-7 {
     background-image: url('https://home.newtabgallery.com/megaman11/Mega-Man-11_screens_14_BlockMan4.jpg')
   }
 
-  header.masthead.background-9 {
+  header.masthead.background-8 {
     background-image: url('https://home.newtabgallery.com/megaman11/5_Bounce_Weapon.jpg')
   }
 
-  header.masthead.background-10 {
+  header.masthead.background-9 {
     background-image: url('https://home.newtabgallery.com/megaman11/Mega-Man-11.jpeg')
   }
 
-  header.masthead.background-11 {
+  header.masthead.background-10 {
     background-image: url('https://home.newtabgallery.com/megaman11/1.jpg')
   }
 
-  header.masthead.background-12 {
+  header.masthead.background-11 {
     background-image: url('https://home.newtabgallery.com/megaman11/0.jpg')
   }
 </style>

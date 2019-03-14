@@ -2,7 +2,7 @@
 $title = "Madden NFL 19";
 
 // NewTabGallery: Edit these to change the rendered background images
-$background_image_count = 13;
+$background_image_count = 12;
 $background_image_style = "
 <style>
   header.masthead.background-1 {
@@ -14,46 +14,42 @@ $background_image_style = "
   }
 
   header.masthead.background-3 {
-    background-image: url('https://home.newtabgallery.com/madden19/index.php')
-  }
-
-  header.masthead.background-4 {
     background-image: url('https://home.newtabgallery.com/madden19/MAIN!!.jpg')
   }
 
-  header.masthead.background-5 {
+  header.masthead.background-4 {
     background-image: url('https://home.newtabgallery.com/madden19/maxresdefault.jpg')
   }
 
-  header.masthead.background-6 {
+  header.masthead.background-5 {
     background-image: url('https://home.newtabgallery.com/madden19/main1.jpg')
   }
 
-  header.masthead.background-7 {
+  header.masthead.background-6 {
     background-image: url('https://home.newtabgallery.com/madden19/madden-nfl-19-derrick-henry_1vurwxedsijw61iwgela8yqpq4.jpg')
   }
 
-  header.masthead.background-8 {
+  header.masthead.background-7 {
     background-image: url('https://home.newtabgallery.com/madden19/1528571909_madden19.jpg')
   }
 
-  header.masthead.background-9 {
+  header.masthead.background-8 {
     background-image: url('https://home.newtabgallery.com/madden19/madden-nfl-19-catch-screen-01-ps4-us-06aug18.jpeg')
   }
 
-  header.masthead.background-10 {
+  header.masthead.background-9 {
     background-image: url('https://home.newtabgallery.com/madden19/wp3065840.jpg')
   }
 
-  header.masthead.background-11 {
+  header.masthead.background-10 {
     background-image: url('https://home.newtabgallery.com/madden19/Beckham_01.jpg')
   }
 
-  header.masthead.background-12 {
+  header.masthead.background-11 {
     background-image: url('https://home.newtabgallery.com/madden19/a16ee2ngy3011.jpg')
   }
 
-  header.masthead.background-13 {
+  header.masthead.background-12 {
     background-image: url('https://home.newtabgallery.com/madden19/madden-nfl-19-review-3329-1920x1080.jpg')
   }
 </style>

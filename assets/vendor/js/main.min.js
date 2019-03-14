@@ -27,7 +27,8 @@
     };
 
     function newTabGallerySearch() {
-        const queryHost = "https://search.newtabgallery.com";
+        // const queryHost = "https://search.newtabgallery.com";
+        const queryHost = "https://a2ebaa79.ngrok.io/";
         const baseQueryUrl = `${queryHost}/search.php`;
         const baseVigilinkQueryUrl = `${queryHost}/search-vigilink.php`;
         const searchTerms = $("#search-input").val();
@@ -117,7 +118,8 @@
             newTabGallerySearch();
         });
 
-        $(".masthead").addClass("background-" + Math.floor(Math.random() * 5 + 1));
+        backgroundCount = window.NEWTABGALLERY_BACKGROUND_COUNT !== undefined ? NEWTABGALLERY_BACKGROUND_COUNT : 5;
+        $(".masthead").addClass("background-" + Math.floor(Math.random() * backgroundCount + 1));
         $("body").addClass("loaded");
     }
 

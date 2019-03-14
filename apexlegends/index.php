@@ -2,6 +2,7 @@
 $title = 'ApexLegends';
 $extensionID = 'afdphlpchedbkafdnoaocaalkhilmngf';
 // NewTabGallery: Edit these to change the rendered background images
+$background_image_count = 9;
 $background_image_style = "
 <style>
     header.masthead.background-1 {

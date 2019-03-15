@@ -99,6 +99,7 @@
                 </div>`;
             });
             carouselOutput += `</div>`;
+            carouselOutput += `<span class="sponsored">Product suggestions provided by Vigilink.</span>`;
             return carouselOutput;
         }
     }

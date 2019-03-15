@@ -33,6 +33,12 @@ h6 {
   margin: 20px 0;
 }
 
+.results .sponsored {
+  font-size: .7em;
+  opacity: .75;
+  vertical-align: middle;
+}
+
 .vigilink-product-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -79,12 +85,6 @@ h6 {
 
 .listing.card .card-footer .product-link + .product-divider:last-child:after {
   content: '';
-}
-
-.listing.card .card-footer .sponsored {
-  font-size: .7em;
-  opacity: .75;
-  vertical-align: middle;
 }
 
 .listing .title {

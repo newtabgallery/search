@@ -21,6 +21,12 @@ h6 {
 
 .results {
   margin: 20px 0;
+
+  .sponsored {
+    font-size: .7em;
+    opacity: .75;
+    vertical-align: middle;
+  }
 }
 
 .vigilink-product-list {
@@ -71,12 +77,6 @@ h6 {
             }
           }
         }
-      }
-
-      .sponsored {
-        font-size: .7em;
-        opacity: .75;
-        vertical-align: middle;
       }
     }
   }

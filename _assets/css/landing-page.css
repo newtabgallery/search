@@ -90,7 +90,9 @@ h6 {
 }
 
 .icon-row a {
+  display: inline-block;
   margin: 0 2px;
+  margin-bottom: 5px;
 }
 
 .hidden-impression {

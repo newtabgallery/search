@@ -6,11 +6,11 @@
     $qt = $_GET["q"];
   }
 
-  $ad_marketplace_partner = 'brandthunder_serp';
+  $ad_marketplace_partner = 'brandthunder_tiles';
   $ad_marketplace_params = array(
     'partner' => $ad_marketplace_partner, 
     'qt' => $qt,
-    'sub1' => 'serp',
+    'sub1' => '10004',
     'sub2' => 'newtabgallery',
     'v' => '1.2',
     'ip' => get_client_ip_server(),

@@ -84,7 +84,7 @@
 
     function generateVigilinkCarousel(vigilinkMetadata) {
         const carouselData = vigilinkMetadata[0];
-        if (carouselData) {
+        if (carouselData && carouselData.links.length > 0) {
             let carouselOutput = `<div class="vigilink-product-list row row-eq-height">`;
             carouselData.links.forEach(link => {
                 carouselOutput += `<div class="col-sm">

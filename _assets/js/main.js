@@ -57,41 +57,50 @@
         updateURL(searchTerms);
     }
 
-    function generateListing(listing, vigilinkMetadata) {
+    function generateListing(listing) {
         const baseResultHost = getLocation(`https://${listing.displayurl}`).hostname;
-        const cardData = vigilinkMetadata.find(metaData => baseResultHost.indexOf(metaData.name.toLowerCase()) != -1);
 
-        return `<div class='listing ${cardData ? 'card' : ''}'>
+        return `<div class='listing'>
                 <a href='${listing.clickurl}'><h3 class='title'>${listing.title}</h3></a>
                 <a href='${listing.clickurl}' class="display-url-link">
                     <p class='display-url'>${listing.displayurl}</p>
                 </a>
                 <p class='description'>${listing.description}</p>
-                ${cardData ? generateCardFooter(cardData) : ''}
             </div>`;
     }
 
-    function generateAd(ad, vigilinkMetadata) {
+    function generateAd(ad) {
         const baseAdHost = getLocation(`https://${ad.displayurl}`).hostname;
-        const cardData = vigilinkMetadata.find(metaData => baseAdHost.indexOf(metaData.name.toLowerCase()) != -1);
 
-        return `<div class='listing ad ${cardData ? 'card' : ''}'>
+        return `<div class='listing ad'>
                 <a id='${ad.adId}' href='${ad.clickurl}'><h3 class='title'>${ad.title}</h3></a>
                 <a id='${ad.adId}' href='${ad.clickurl}' class="display-url-link">
                     <p class='display-url'><span class='marketplace-label'>Ad</span>${ad.displayurl}</p>
                 </a>
                 <p class='description'>${ad.description}</p>
                 <img class='hidden-impression' src='${ad.impressionurl}' width='1' height='1' border='0' />
-                ${cardData ? generateCardFooter(cardData) : ''}
             </div>`;
     }
 
-    function generateCardFooter(cardData) {
-        let cardFooterHTML = `<div class="card-footer"><strong>Popular Links:</strong> `;
-        cardData.links.forEach(link => cardFooterHTML += `<a class="product-link" href="${link.url}">${link.product}</a><span class="product-divider"></span>`);
-        cardFooterHTML += `<span class="sponsored">Sponsored: Links provided by VigLink</span>`
-        cardFooterHTML += `<div>`
-        return cardFooterHTML;
+    function generateVigilinkCarousel(vigilinkMetadata) {
+        const carouselData = vigilinkMetadata[0];
+        if (carouselData) {
+            let carouselOutput = `<div class="vigilink-product-list row row-eq-height">`;
+            carouselData.links.forEach(link => {
+                carouselOutput += `<div class="col-sm">
+                    <div class="card">
+                        <a class="product-link" href="${link.url}">
+                            <div class="product-image" style="background-image: url(${link.imageUrl});"></div>
+                            <div>
+                                ${link.product}
+                            </div>
+                        </a>
+                    </div>
+                </div>`;
+            });
+            carouselOutput += `</div>`;
+            return carouselOutput;
+        }
     }
 
     function postResults(response, vigilinkResponse) {
@@ -102,8 +111,16 @@
         $("body").addClass("search-complete");
         $("#web-listings").empty();
 
-        adListings.forEach(ad => $("#web-listings").append(generateAd(ad, vigilinkMetadata)));
-        webListings.forEach(listing => $("#web-listings").append(generateListing(listing, vigilinkMetadata)));
+        adCount = adListings.length;
+        if (adCount > 0) {
+            firstAds = adListings.slice(0, adCount/2).forEach(ad => $("#web-listings").append(generateAd(ad)));;
+            $("#web-listings").append(generateVigilinkCarousel(vigilinkMetadata));
+            secondAds = adListings.slice(adCount/2, adCount - 1).forEach(ad => $("#web-listings").append(generateAd(ad)));
+        } else {
+            $("#web-listings").append(generateVigilinkCarousel(vigilinkMetadata));
+        }
+
+        webListings.forEach(listing => $("#web-listings").append(generateListing(listing)));
     }
 
     function onReady(){

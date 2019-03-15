@@ -23,6 +23,30 @@ h6 {
   margin: 20px 0;
 }
 
+.vigilink-product-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  font-size: 90%;
+
+  .col-sm {
+    max-width: 250px;
+  }
+  .card {
+    padding: 10px;
+    height: 100%;
+  }
+  .product-image {
+    width: 100%;
+    height: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 10px;
+  }
+}
+
 .listing {
   margin: 15px 0;
 

@@ -39,6 +39,15 @@ h6 {
   vertical-align: middle;
 }
 
+.results .privacy-row {
+  opacity: .75;
+  vertical-align: middle;
+}
+
+.results .privacy-row p {
+  margin: 0;
+}
+
 .vigilink-product-list {
   display: -webkit-box;
   display: -ms-flexbox;

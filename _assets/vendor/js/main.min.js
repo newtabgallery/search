@@ -26,7 +26,21 @@
         return l;
     };
 
-    function newTabGallerySearch() {
+    function getBingAdSearchResults(searchQuery) {
+        return new Promise(function(resolve) {
+            let bingSearch = new BCISearch({
+                pid: 1208,
+                query: searchQuery,
+                count: 6,
+                subid: 7100
+            });
+            bingSearch.getResults(function(results) {
+                resolve(results);
+            });
+        })
+      }
+
+    async function newTabGallerySearch() {
         const queryHost = "https://search.newtabgallery.com";
         const baseQueryUrl = `${queryHost}/search.php`;
         const baseVigilinkQueryUrl = `${queryHost}/search-vigilink.php`;
@@ -36,7 +50,7 @@
             qt: searchTerms,
         };
 
-        searchResults = $.ajax({
+        let searchResults = $.ajax({
             type: "POST",
             async: false,
             url: baseQueryUrl,
@@ -44,7 +58,7 @@
             dataType: "JSON"
         });
 
-        vigilinkSearchResults = $.ajax({
+        let vigilinkSearchResults = $.ajax({
             type: "POST",
             async: false,
             url: baseVigilinkQueryUrl,
@@ -52,7 +66,9 @@
             dataType: "JSON"
         });
 
-        postResults(searchResults.responseJSON, vigilinkSearchResults.responseJSON);
+        let bingAdSearchResults = await getBingAdSearchResults(searchTerms);
+
+        postResults(searchResults.responseJSON, vigilinkSearchResults.responseJSON, bingAdSearchResults);
 
         updateURL(searchTerms);
     }
@@ -69,7 +85,28 @@
             </div>`;
     }
 
-    function generateAd(ad) {
+    function generateMicrosoftPrivacyRow(showAdRelated) {
+        return `<div class='privacy-row row'>
+                    <div class="col text-left" style="${!!showAdRelated ? '' : 'display: none;'}">
+                        <p>Ads related to: <strong>${$("#search-input").val()}</strong></p>
+                    </div>
+                    <div class="col text-right">
+                        <a href='https://privacy.microsoft.com/en-us/privacystatement' target="_blank">Ads by Microsoft (privacy)</a>
+                    </div>
+                </div>`;
+    }
+
+    function generateBingAd(ad) {
+        return `<div class='listing ad'>
+                <a id='${ad.adId}' href='${ad.link}'><h3 class='title'>${ad.title}</h3></a>
+                <a id='${ad.adId}' href='${ad.link}' class="display-url-link">
+                    <p class='display-url'><span class='marketplace-label'>Ad</span>${ad.domain}</p>
+                </a>
+                <p class='description'>${ad.text}</p>
+            </div>`;
+    }
+
+    function generateAdmAd(ad) {
         const baseAdHost = getLocation(`https://${ad.displayurl}`).hostname;
 
         return `<div class='listing ad'>
@@ -104,24 +141,29 @@
         }
     }
 
-    function postResults(response, vigilinkResponse) {
-        const webListings = response.weblistings && response.weblistings.weblisting ? response.weblistings.weblisting : [];
-        const adListings = response.adlistings && response.adlistings.listing ? response.adlistings.listing : [];
+    function postResults(admResponse, vigilinkResponse, bingSearchResponse) {
+        const bingAdListings = bingSearchResponse ? bingSearchResponse : [];
         const vigilinkMetadata = vigilinkResponse && vigilinkResponse.items ? vigilinkResponse.items : [];
+        const webListings = admResponse.weblistings && admResponse.weblistings.weblisting ? admResponse.weblistings.weblisting : [];
+        const admAdListings = admResponse.adlistings && admResponse.adlistings.listing ? admResponse.adlistings.listing : [];
 
         $("body").addClass("search-complete");
         $("#web-listings").empty();
 
-        adCount = adListings.length;
-        if (adCount > 0) {
-            firstAds = adListings.slice(0, adCount/2).forEach(ad => $("#web-listings").append(generateAd(ad)));;
+        bingAdCount = bingAdListings.length;
+        if (bingAdCount > 0) {
+            $("#web-listings").append(generateMicrosoftPrivacyRow(true));
+            firstAds = bingAdListings.slice(0, bingAdCount/2).forEach(ad => $("#web-listings").append(generateBingAd(ad)));;
             $("#web-listings").append(generateVigilinkCarousel(vigilinkMetadata));
-            secondAds = adListings.slice(adCount/2, adCount - 1).forEach(ad => $("#web-listings").append(generateAd(ad)));
+            secondAds = bingAdListings.slice(bingAdCount/2, bingAdCount - 1).forEach(ad => $("#web-listings").append(generateBingAd(ad)));
+            $("#web-listings").append(generateMicrosoftPrivacyRow());
         } else {
             $("#web-listings").append(generateVigilinkCarousel(vigilinkMetadata));
         }
 
         webListings.forEach(listing => $("#web-listings").append(generateListing(listing)));
+
+        admAdListings.forEach(ad => $("#web-listings").append(generateAdmAd(ad)));;
     }
 
     function onReady(){

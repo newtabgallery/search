@@ -40,7 +40,7 @@
         })
       }
 
-    async function newTabGallerySearch() {
+    function newTabGallerySearch() {
         const queryHost = "https://search.newtabgallery.com";
         const baseQueryUrl = `${queryHost}/search.php`;
         const baseVigilinkQueryUrl = `${queryHost}/search-vigilink.php`;
@@ -50,12 +50,25 @@
             qt: searchTerms,
         };
 
+        $("#bing-ads-first").empty();
+        $("#vigilink-ads").empty();
+        $("#bing-ads-second").empty();
+        $("#adm-search-results").empty();
+        $("#adm-ads").empty();
+
         let searchResults = $.ajax({
             type: "POST",
             async: false,
             url: baseQueryUrl,
             data: searchQuery,
-            dataType: "JSON"
+            dataType: "JSON",
+            success: function (data, textStatus, xhr) {
+                const webListings = data.weblistings && data.weblistings.weblisting ? data.weblistings.weblisting : [];
+                const admAdListings = data.adlistings && data.adlistings.listing ? data.adlistings.listing : [];
+
+                webListings.forEach(listing => $("#adm-search-results").append(generateListing(listing)));
+                admAdListings.forEach(ad => $("#adm-ads").append(generateAdmAd(ad)));;
+            }
         });
 
         let vigilinkSearchResults = $.ajax({
@@ -63,14 +76,33 @@
             async: false,
             url: baseVigilinkQueryUrl,
             data: searchQuery,
-            dataType: "JSON"
+            dataType: "JSON",
+            success: function (data, textStatus, xhr) {
+                const vigilinkMetadata = data && data.items ? data.items : [];
+                $("#vigilink-ads").append(generateVigilinkCarousel(vigilinkMetadata));
+            }
         });
 
-        let bingAdSearchResults = await getBingAdSearchResults(searchTerms);
+        let bingSearch = new BCISearch({
+            pid: 1208,
+            query: searchTerms,
+            count: 6,
+            subid: 7100
+        }).getResults(function(results) {
+            const bingAdListings = results ? results : [];
 
-        postResults(searchResults.responseJSON, vigilinkSearchResults.responseJSON, bingAdSearchResults);
+            bingAdCount = bingAdListings.length;
+            if (bingAdCount > 0) {
+                $("#bing-ads-first").append(generateMicrosoftPrivacyRow(true));
+                firstAds = bingAdListings.slice(0, bingAdCount/2).forEach(ad => $("#bing-ads-first").append(generateBingAd(ad)));;
+                secondAds = bingAdListings.slice(bingAdCount/2, bingAdCount - 1).forEach(ad => $("#bing-ads-second").append(generateBingAd(ad)));
+                $("#bing-ads-second").append(generateMicrosoftPrivacyRow());
+            }
+        });
 
         updateURL(searchTerms);
+
+        $("body").addClass("search-complete");
     }
 
     function generateListing(listing) {
@@ -139,31 +171,6 @@
             carouselOutput += `<span class="sponsored">Product suggestions provided by Vigilink.</span>`;
             return carouselOutput;
         }
-    }
-
-    function postResults(admResponse, vigilinkResponse, bingSearchResponse) {
-        const bingAdListings = bingSearchResponse ? bingSearchResponse : [];
-        const vigilinkMetadata = vigilinkResponse && vigilinkResponse.items ? vigilinkResponse.items : [];
-        const webListings = admResponse.weblistings && admResponse.weblistings.weblisting ? admResponse.weblistings.weblisting : [];
-        const admAdListings = admResponse.adlistings && admResponse.adlistings.listing ? admResponse.adlistings.listing : [];
-
-        $("body").addClass("search-complete");
-        $("#web-listings").empty();
-
-        bingAdCount = bingAdListings.length;
-        if (bingAdCount > 0) {
-            $("#web-listings").append(generateMicrosoftPrivacyRow(true));
-            firstAds = bingAdListings.slice(0, bingAdCount/2).forEach(ad => $("#web-listings").append(generateBingAd(ad)));;
-            $("#web-listings").append(generateVigilinkCarousel(vigilinkMetadata));
-            secondAds = bingAdListings.slice(bingAdCount/2, bingAdCount - 1).forEach(ad => $("#web-listings").append(generateBingAd(ad)));
-            $("#web-listings").append(generateMicrosoftPrivacyRow());
-        } else {
-            $("#web-listings").append(generateVigilinkCarousel(vigilinkMetadata));
-        }
-
-        webListings.forEach(listing => $("#web-listings").append(generateListing(listing)));
-
-        admAdListings.forEach(ad => $("#web-listings").append(generateAdmAd(ad)));;
     }
 
     function onReady(){

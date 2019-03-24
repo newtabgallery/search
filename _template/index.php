@@ -90,7 +90,13 @@
 
   <!-- Results -->
   <div class="container">
-    <div id="web-listings" class="results"></div>
+    <div id="web-listings" class="results">
+      <div id="bing-ads-first"></div>
+      <div id="vigilink-ads"></div>
+      <div id="bing-ads-second"></div>
+      <div id="adm-search-results"></div>
+      <div id="adm-ads"></div>
+    </div>
   </div>
 
   <!-- Footer -->

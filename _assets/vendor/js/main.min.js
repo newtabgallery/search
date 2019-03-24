@@ -71,18 +71,6 @@
             }
         });
 
-        let vigilinkSearchResults = $.ajax({
-            type: "POST",
-            async: false,
-            url: baseVigilinkQueryUrl,
-            data: searchQuery,
-            dataType: "JSON",
-            success: function (data, textStatus, xhr) {
-                const vigilinkMetadata = data && data.items ? data.items : [];
-                $("#vigilink-ads").append(generateVigilinkCarousel(vigilinkMetadata));
-            }
-        });
-
         let bingSearch = new BCISearch({
             pid: 1208,
             query: searchTerms,
@@ -98,6 +86,18 @@
                 secondAds = bingAdListings.slice(bingAdCount/2, bingAdCount - 1).forEach(ad => $("#bing-ads-second").append(generateBingAd(ad)));
                 $("#bing-ads-second").append(generateMicrosoftPrivacyRow());
             }
+
+            let vigilinkSearchResults = $.ajax({
+                type: "POST",
+                async: false,
+                url: baseVigilinkQueryUrl,
+                data: searchQuery,
+                dataType: "JSON",
+                success: function (data, textStatus, xhr) {
+                    const vigilinkMetadata = data && data.items ? data.items : [];
+                    $("#vigilink-ads").append(generateVigilinkCarousel(vigilinkMetadata));
+                }
+            });
         });
 
         updateURL(searchTerms);

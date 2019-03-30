@@ -2,7 +2,7 @@
 $title = "ornaments";
 
 // NewTabGallery: Edit these to change the rendered background images
-$background_image_count = 7;
+$background_image_count = 8;
 $background_image_style = "
 <style>
   header.masthead.background-1 {
@@ -30,6 +30,10 @@ $background_image_style = "
   }
 
   header.masthead.background-7 {
+    background-image: url('https://home.newtabgallery.com/ornaments/KNITTED_ORNAMENTS_3.JPG')
+  }
+
+  header.masthead.background-8 {
     background-image: url('https://home.newtabgallery.com/ornaments/DIY%20Wood%20Slice%20Snowmen%20Ornaments%20hero_6.jpg')
   }
 </style>

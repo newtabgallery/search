@@ -2,7 +2,7 @@
 $title = "James Bay";
 
 // NewTabGallery: Edit these to change the rendered background images
-$background_image_count = 9;
+$background_image_count = 10;
 $background_image_style = "
 <style>
   header.masthead.background-1 {
@@ -30,14 +30,18 @@ $background_image_style = "
   }
 
   header.masthead.background-7 {
-    background-image: url('https://home.newtabgallery.com/jamesbay/jamesbayphoto72.jpg')
+    background-image: url('https://home.newtabgallery.com/jamesbay/IMG_7214.JPG')
   }
 
   header.masthead.background-8 {
-    background-image: url('https://home.newtabgallery.com/jamesbay/wp2434967.jpg')
+    background-image: url('https://home.newtabgallery.com/jamesbay/jamesbayphoto72.jpg')
   }
 
   header.masthead.background-9 {
+    background-image: url('https://home.newtabgallery.com/jamesbay/wp2434967.jpg')
+  }
+
+  header.masthead.background-10 {
     background-image: url('https://home.newtabgallery.com/jamesbay/sssssssss.jpg')
   }
 </style>

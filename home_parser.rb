@@ -35,7 +35,7 @@ end
 
 tab_page_directories.each do |directory|
     base_home_directory = directory.split('/').last
-    home_directory_images = Dir.glob("#{directory}/*").select { |file| File.file?(file) && !file.include?("icon") && ( File.extname(file) == ".jpg" || File.extname(file) == ".jpeg" || File.extname(file) == ".png" || File.extname(file) == ".gif" )  }
+    home_directory_images = Dir.glob("#{directory}/*").select { |file| File.file?(file) && !file.include?("icon") && ( File.extname(file).downcase == ".jpg" || File.extname(file).downcase == ".jpeg" || File.extname(file).downcase == ".png" || File.extname(file).downcase == ".gif" )  }
     
     if File.exist?("#{directory}/index.php")
         index = File.open("#{directory}/index.php", "r")

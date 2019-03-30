@@ -2,7 +2,7 @@
 $title = "Lego Overwatch";
 
 // NewTabGallery: Edit these to change the rendered background images
-$background_image_count = 11;
+$background_image_count = 12;
 $background_image_style = "
 <style>
   header.masthead.background-1 {
@@ -30,22 +30,26 @@ $background_image_style = "
   }
 
   header.masthead.background-7 {
-    background-image: url('https://home.newtabgallery.com/legooverwatch/LEGO-Overwatch-75987-Omnic-Bastion-Cover.jpg')
+    background-image: url('https://home.newtabgallery.com/legooverwatch/562f4491de2271bd79707bbc25e237c029ea0657.JPG')
   }
 
   header.masthead.background-8 {
-    background-image: url('https://home.newtabgallery.com/legooverwatch/simon-bau-tracer-turn-a.jpg')
+    background-image: url('https://home.newtabgallery.com/legooverwatch/LEGO-Overwatch-75987-Omnic-Bastion-Cover.jpg')
   }
 
   header.masthead.background-9 {
-    background-image: url('https://home.newtabgallery.com/legooverwatch/504129-LEGOwatch.jpg')
+    background-image: url('https://home.newtabgallery.com/legooverwatch/simon-bau-tracer-turn-a.jpg')
   }
 
   header.masthead.background-10 {
-    background-image: url('https://home.newtabgallery.com/legooverwatch/simon-bau-tracer-turn-b.jpg')
+    background-image: url('https://home.newtabgallery.com/legooverwatch/504129-LEGOwatch.jpg')
   }
 
   header.masthead.background-11 {
+    background-image: url('https://home.newtabgallery.com/legooverwatch/simon-bau-tracer-turn-b.jpg')
+  }
+
+  header.masthead.background-12 {
     background-image: url('https://home.newtabgallery.com/legooverwatch/ain.jpg')
   }
 </style>

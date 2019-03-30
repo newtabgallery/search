@@ -2,7 +2,7 @@
 $title = "Dream League Soccer";
 
 // NewTabGallery: Edit these to change the rendered background images
-$background_image_count = 9;
+$background_image_count = 10;
 $background_image_style = "
 <style>
   header.masthead.background-1 {
@@ -30,14 +30,18 @@ $background_image_style = "
   }
 
   header.masthead.background-7 {
-    background-image: url('https://home.newtabgallery.com/dreamsoccer/unnamed.png')
+    background-image: url('https://home.newtabgallery.com/dreamsoccer/Edit_Players.PNG')
   }
 
   header.masthead.background-8 {
-    background-image: url('https://home.newtabgallery.com/dreamsoccer/DLS-PC-e1528176569211.jpg')
+    background-image: url('https://home.newtabgallery.com/dreamsoccer/unnamed.png')
   }
 
   header.masthead.background-9 {
+    background-image: url('https://home.newtabgallery.com/dreamsoccer/DLS-PC-e1528176569211.jpg')
+  }
+
+  header.masthead.background-10 {
     background-image: url('https://home.newtabgallery.com/dreamsoccer/Como-conseguir-monedas-gratis-en-Dream-League-Soccer.jpg')
   }
 </style>

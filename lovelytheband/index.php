@@ -2,7 +2,7 @@
 $title = "lovelytheband";
 
 // NewTabGallery: Edit these to change the rendered background images
-$background_image_count = 11;
+$background_image_count = 12;
 $background_image_style = "
 <style>
   header.masthead.background-1 {
@@ -10,42 +10,46 @@ $background_image_style = "
   }
 
   header.masthead.background-2 {
-    background-image: url('https://home.newtabgallery.com/lovelytheband/maxresdefault.jpg')
+    background-image: url('https://home.newtabgallery.com/lovelytheband/Lovelytheband_01_0.JPG')
   }
 
   header.masthead.background-3 {
-    background-image: url('https://home.newtabgallery.com/lovelytheband/maxresdefault%20(1).jpg')
+    background-image: url('https://home.newtabgallery.com/lovelytheband/maxresdefault.jpg')
   }
 
   header.masthead.background-4 {
-    background-image: url('https://home.newtabgallery.com/lovelytheband/2018-06-29-GoFest18-Meet-and-Greets-156.jpg')
+    background-image: url('https://home.newtabgallery.com/lovelytheband/maxresdefault%20(1).jpg')
   }
 
   header.masthead.background-5 {
-    background-image: url('https://home.newtabgallery.com/lovelytheband/02b327960561904085aecbf5b85ec04a20171918270481.jpg')
+    background-image: url('https://home.newtabgallery.com/lovelytheband/2018-06-29-GoFest18-Meet-and-Greets-156.jpg')
   }
 
   header.masthead.background-6 {
-    background-image: url('https://home.newtabgallery.com/lovelytheband/MAIN!.jpg')
+    background-image: url('https://home.newtabgallery.com/lovelytheband/02b327960561904085aecbf5b85ec04a20171918270481.jpg')
   }
 
   header.masthead.background-7 {
-    background-image: url('https://home.newtabgallery.com/lovelytheband/IMG_4754.jpg')
+    background-image: url('https://home.newtabgallery.com/lovelytheband/MAIN!.jpg')
   }
 
   header.masthead.background-8 {
-    background-image: url('https://home.newtabgallery.com/lovelytheband/maxresdefault%20(2).jpg')
+    background-image: url('https://home.newtabgallery.com/lovelytheband/IMG_4754.jpg')
   }
 
   header.masthead.background-9 {
-    background-image: url('https://home.newtabgallery.com/lovelytheband/LOVELYTHEBAND.jpg')
+    background-image: url('https://home.newtabgallery.com/lovelytheband/maxresdefault%20(2).jpg')
   }
 
   header.masthead.background-10 {
-    background-image: url('https://home.newtabgallery.com/lovelytheband/lovelytheband-1%20(1).jpg')
+    background-image: url('https://home.newtabgallery.com/lovelytheband/LOVELYTHEBAND.jpg')
   }
 
   header.masthead.background-11 {
+    background-image: url('https://home.newtabgallery.com/lovelytheband/lovelytheband-1%20(1).jpg')
+  }
+
+  header.masthead.background-12 {
     background-image: url('https://home.newtabgallery.com/lovelytheband/lovelytheband-1.jpg')
   }
 </style>

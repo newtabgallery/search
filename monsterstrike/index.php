@@ -2,7 +2,7 @@
 $title = "Monster Strike";
 
 // NewTabGallery: Edit these to change the rendered background images
-$background_image_count = 7;
+$background_image_count = 8;
 $background_image_style = "
 <style>
   header.masthead.background-1 {
@@ -31,6 +31,10 @@ $background_image_style = "
 
   header.masthead.background-7 {
     background-image: url('https://home.newtabgallery.com/monsterstrike/monsterstrike.jpg')
+  }
+
+  header.masthead.background-8 {
+    background-image: url('https://home.newtabgallery.com/monsterstrike/Capture%20(54).PNG')
   }
 </style>
 ";

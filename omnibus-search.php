@@ -13,7 +13,9 @@
 
   header('Access-Control-Allow-Origin: *');
   header('Content-Type: application/json');
-  header("Access-Control-Allow-Origin: {$_SERVER['HTTP_ORIGIN']}");
+  if(isset($_SERVER['HTTP_REFERER'])) {
+    header("Access-Control-Allow-Origin: *");
+  }
 
   $qt = '';
   if (isset($_GET["q"]) && !empty($_GET["q"])) {

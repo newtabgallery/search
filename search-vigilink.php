@@ -11,7 +11,6 @@
 
   header('Access-Control-Allow-Origin: *');
   header('Content-Type: application/json');
-  header("Access-Control-Allow-Origin: {$_SERVER['HTTP_ORIGIN']}");
 
   $qt = '';
   if (isset($_POST["qt"]) && !empty($_POST["qt"])) {

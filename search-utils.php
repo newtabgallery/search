@@ -56,6 +56,14 @@
             outputTile($tile);
           }
         }
-    }    
+    }
   }
 
+  function get_client_referrer() {
+    $client_referrer = '';
+    if (array_key_exists('HTTP_REFERER', $_SERVER))
+        $client_referrer = $_SERVER['HTTP_REFERER'];
+    else
+        $client_referrer = $_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
+    return $client_referrer;
+  }

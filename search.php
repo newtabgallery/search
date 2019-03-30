@@ -29,7 +29,7 @@
     'v' => 7,
     'ip' => get_client_ip_server(),
     'ua' => $_SERVER['HTTP_USER_AGENT'],
-    'rfr' => $_SERVER['HTTP_REFERER'],
+    'rfr' => get_client_referrer(),
     'results' => 6,
     'web' => 1,
     'web-results' => 15,

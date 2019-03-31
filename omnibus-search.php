@@ -23,7 +23,7 @@
     # Start GA request
     $ga_params = array(
         'v' => 1,
-        'tid' => 'UA-127110494-1',
+        'tid' => 'UA-127110494-2',
         'cid' => uniqid(),
         't' => 'pageview',
         'dh' => 'search.newtabgallery.com',

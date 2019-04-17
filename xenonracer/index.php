@@ -26,15 +26,15 @@ $background_image_style = "
   }
 
   header.masthead.background-6 {
-    background-image: url('https://home.newtabgallery.com/xenonracer/\.jpg')
-  }
-
-  header.masthead.background-7 {
     background-image: url('https://home.newtabgallery.com/xenonracer/11111.jpg')
   }
 
-  header.masthead.background-8 {
+  header.masthead.background-7 {
     background-image: url('https://home.newtabgallery.com/xenonracer/091580.jpg')
+  }
+
+  header.masthead.background-8 {
+    background-image: url('https://home.newtabgallery.com/xenonracer/broke.jpg')
   }
 </style>
 ";

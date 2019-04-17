@@ -1,5 +1,5 @@
 <?php
-$title = "Ito THe Mist";
+$title = "Into THe Mist";
 
 // NewTabGallery: Edit these to change the rendered background images
 $background_image_count = 1;

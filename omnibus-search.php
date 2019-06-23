@@ -20,7 +20,7 @@
   }
 
   $qt = trim($qt);
-  if (empty($qt)) {
+  if (empty($qt) || $qt === "{searchTerms}" || $qt === "None") {
     return;
   }
   

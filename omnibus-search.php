@@ -18,6 +18,11 @@
   if (isset($_GET["q"]) && !empty($_GET["q"])) {
     $qt = $_GET["q"];
   }
+
+  $qt = trim($qt);
+  if (empty($qt)) {
+    return;
+  }
   
   try {
     # Start GA request

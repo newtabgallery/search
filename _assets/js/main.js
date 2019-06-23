@@ -44,7 +44,11 @@
         const queryHost = "https://search.newtabgallery.com";
         const baseQueryUrl = `${queryHost}/search.php`;
         const baseVigilinkQueryUrl = `${queryHost}/search-vigilink.php`;
-        const searchTerms = $("#search-input").val();
+        const searchTerms = $("#search-input").val().trim();
+
+        if (!searchTerms) {
+            return true;
+        }
 
         const searchQuery = {
             qt: searchTerms,

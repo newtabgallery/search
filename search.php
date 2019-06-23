@@ -21,6 +21,11 @@
     return;
   }
 
+  $qt = trim($qt);
+  if (empty($qt)) {
+    return;
+  }
+
   $ad_marketplace_params = array(
     'partner' => 'brandthunder_serp',
     'qt' => $qt,

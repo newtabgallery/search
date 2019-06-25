@@ -21,6 +21,7 @@
 
   $qt = trim($qt);
   if (empty($qt) || $qt === "{searchTerms}" || $qt === "None") {
+    header("Location: https://www.my-search.com/?zoneid=89128928");
     return;
   }
   

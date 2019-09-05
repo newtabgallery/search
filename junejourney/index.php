@@ -1,5 +1,5 @@
 <?php
-$title = "June's Journey";
+$title = "Junes Journey";
 
 // NewTabGallery: Edit these to change the rendered background images
 $background_image_count = 8;

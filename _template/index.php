@@ -94,8 +94,8 @@
       <div id="bing-ads-first"></div>
       <div id="bing-ads-second"></div>
       <div id="vigilink-ads"></div>
-      <div id="adm-search-results"></div>
       <div id="adm-ads"></div>
+      <div id="adm-search-results"></div>
     </div>
   </div>
 

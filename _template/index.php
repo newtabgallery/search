@@ -69,6 +69,9 @@
         <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
           <form id="search-form">
             <div class="form-row">
+              <div class="icon-row col-12">
+                <?php generate_search_tiles($tiles); ?>
+              </div>
               <div class="col-12 col-md-9 mb-2 mb-md-0">
                 <input id="search-input" type="search" class="form-control form-control-lg" placeholder="Search">
               </div>
@@ -77,9 +80,6 @@
                   <i class="fas fa-search">
                   </i>
                 </button>
-              </div>
-              <div class="icon-row col-12">
-                <?php generate_search_tiles($tiles); ?>
               </div>
             </div>
           </form>

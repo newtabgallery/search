@@ -102,20 +102,6 @@ document.body.appendChild(s);}((++window.abd || (window.abd = 0))));</script>
       <div id="bing-ads-first"></div>
       <div id="bing-ads-second"></div>
       <div id="adm-ads"></div>
-<!-- Composite Start -->
-<style>#M474896ScriptRootC716071 {min-height: 300px;}</style>
-<div id="M474896ScriptRootC716071">
-        <div id="M474896PreloadC716071">
-        Loading...    </div>
-        <script>
-                (function(){
-            var D=new Date(),d=document,b='body',ce='createElement',ac='appendChild',st='style',ds='display',n='none',gi='getElementById',lp=d.location.protocol,wp=lp.indexOf('http')==0?lp:'https:';
-            var i=d[ce]('iframe');i[st][ds]=n;d[gi]("M474896ScriptRootC716071")[ac](i);try{var iw=i.contentWindow.document;iw.open();iw.writeln("<ht"+"ml><bo"+"dy></bo"+"dy></ht"+"ml>");iw.close();var c=iw[b];}
-            catch(e){var iw=d;var c=d[gi]("M474896ScriptRootC716071");}var dv=iw[ce]('div');dv.id="MG_ID";dv[st][ds]=n;dv.innerHTML=716071;c[ac](dv);
-            var s=iw[ce]('script');s.async='async';s.defer='defer';s.charset='utf-8';s.src=wp+"//jsc.mgid.com/s/e/search.newtabgallery.com.716071.js?t="+D.getUTCFullYear()+D.getUTCMonth()+D.getUTCDate()+D.getUTCHours();c[ac](s);})();
-    </script>
-    </div>
-<!-- Composite End —>
       <div id="adm-search-results"></div>
     </div>
     <div style=="text-align: center">

@@ -65,6 +65,12 @@
     <div class="overlay">
     </div>
     <div class="container">
+<!--BEGIN TRIBAL AD ADZONE DISPLAY CODE -->
+<script>(function(ins){ if ('https:'==document.location.protocol){var h='pubssl';} else {var h='pub';}
+var d = "abd"+ins, s = document.createElement('script');document.write('<div id="'+d+'"></div>');
+s.type = 'text/javascript'; s.src = '//'+h+'.pgssl.com/adv/ap/fastjsa.asp?m=i&z=60047&p=46661&n=231&s=l&rr='+d; s.async = true; s.defer = true; 
+document.body.appendChild(s);}((++window.abd || (window.abd = 0))));</script>
+<!--END TRIBAL AD ADZONE DISPLAY CODE -->
       <div class="row">
         <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
           <form id="search-form">
@@ -93,7 +99,6 @@
     <div id="web-listings" class="results">
       <div id="bing-ads-first"></div>
       <div id="bing-ads-second"></div>
-      <div id="vigilink-ads"></div>
       <div id="adm-ads"></div>
       <div id="adm-search-results"></div>
     </div>

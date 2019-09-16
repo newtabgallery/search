@@ -94,6 +94,16 @@
   <!-- Results -->
   <div class="container">
     <div id="web-listings" class="results">
+      <div id="zergnet-widget-78494"></div>
+      <script language="javascript" type="text/javascript">
+        (function() {
+          var zergnet = document.createElement('script');
+          zergnet.type = 'text/javascript'; zergnet.async = true;
+          zergnet.src = (document.location.protocol == "https:" ? "https:" : "http:") + '//www.zergnet.com/zerg.js?id=78494';
+          var znscr = document.getElementsByTagName('script')[0];
+          znscr.parentNode.insertBefore(zergnet, znscr);
+        })();
+      </script>
       <div id="bing-ads-first"></div>
       <div id="bing-ads-second"></div>
       <div id="adm-ads"></div>

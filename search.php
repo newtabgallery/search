@@ -35,7 +35,7 @@
     'ip' => get_client_ip_server(),
     'ua' => $_SERVER['HTTP_USER_AGENT'],
     'rfr' => get_client_referrer(),
-    'results' => 6,
+    'results' => 10,
     'web' => 1,
     'web-results' => 15,
     'out' => 'json',

@@ -25,7 +25,7 @@
 
   function generate_search_tiles($tiles) {
     echo '<a href="http://redirect.viglink.com?key=' . getenv('VIGILINK_API_KEY') . '&u=http%3A%2F%2Fwww.walmart.com "><img class="tile" height="50" width="50" alt="Walmart" title="Walmart" src="https://home.newtabgallery.com/global/images/walmart.png"></a>';
-    echo '<a href="http://redirect.viglink.com?key=' . getenv('VIGILINK_API_KEY') . '&u=http%3A%2F%2Fhrblock.com"><img class="tile" height="50" width="50" alt="HR Block Home" title="HR Block Home" src="https://home.newtabgallery.com/global/images/hrblock_icon.png"></a>';
+    echo '<a href="http://redirect.viglink.com?key=' . getenv('VIGILINK_API_KEY') . '&u=http%3A%2F%2Fwww.parachutehome.com"><img class="tile" height="50" width="50" alt="Parachute Home" title="Parachute Home" src="https://home.newtabgallery.com/global/images/parachute.png"></a>';
     if (isset($tiles)) {
         function outputTile($tile) {
             if ($tile["image_url"]) {

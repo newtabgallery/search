@@ -49,15 +49,20 @@
           outputTile($tile);
         }
         $count = min(sizeof($tiles), 8);
-        $rand_keys = array_rand($tiles, $count);
+
+        $rand_keys = [0];
+        if ($count > 1) {
+          $rand_keys = array_rand($tiles, $count);
+        }
+
         for ($i = 0; $i < $count; $i++) {
-          if (isset($tiles[$rand_keys[$i]])) {
-            $tile = $tiles[$rand_keys[$i]];
-            if ($tile["name"] != "Amazon" && $tile["name"] != "Samsung - Performics") {
-              outputTile($tile);
-            }
+          $tile = $tiles[$rand_keys[$i]];
+          if ($tile->{'name'} != "Amazon" &&
+            $tile->{'name'} != "Samsung - Performics") {
+            outputTile($tile);
           }
         }
+      }
     }
   }
 

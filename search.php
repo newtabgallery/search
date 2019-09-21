@@ -31,7 +31,7 @@
     'qt' => $qt,
     'sub1' => 'serp',
     'sub2' => 'newtabgallery',
-    'v' => 8,
+    'v' => 7,
     'ip' => get_client_ip_server(),
     'ua' => $_SERVER['HTTP_USER_AGENT'],
     'rfr' => get_client_referrer(),

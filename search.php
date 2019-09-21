@@ -36,7 +36,6 @@
     'ua' => $_SERVER['HTTP_USER_AGENT'],
     'rfr' => get_client_referrer(),
     'results' => 10,
-    'results-pa' => 10,
     'web' => 1,
     'web-results' => 15,
     'out' => 'json',

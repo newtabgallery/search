@@ -27,37 +27,41 @@
     echo '<a href="http://redirect.viglink.com?key=' . getenv('VIGILINK_API_KEY') . '&u=http%3A%2F%2Fwww.walmart.com "><img class="tile" height="50" width="50" alt="Walmart" title="Walmart" src="https://home.newtabgallery.com/global/images/walmart.png"></a>';
     echo '<a href="http://redirect.viglink.com?key=' . getenv('VIGILINK_API_KEY') . '&u=http%3A%2F%2Fwww.parachutehome.com"><img class="tile" height="50" width="50" alt="Parachute Home" title="Parachute Home" src="https://home.newtabgallery.com/global/images/parachute.png"></a>';
     if (isset($tiles)) {
-        function outputTile($tile) {
-            if ($tile["image_url"]) {
-              echo '<a href="'.$tile['click_url'].'"><img class="tile" height="50" width="50" alt="'.$tile["name"].'" title="'.$tile["name"].'" src="'.$tile["image_url"].'"></a>';
-              echo '<img src="'.$tile["impression_url"].'">';
-            }
-        }
-        $stickyArray = array_filter(
-            $tiles,
-            function ($e) {
-                return ($e["name"] == "Amazon" || $e["name"] == "Samsung - Performics");
-            }
-        );
-        function my_sort($a,$b)
-        {
-            if ($a["name"] == $b["name"]) return 0;
-            return ($a["name"] < $b["name"]) ? -1 : 1;
-        }
-        usort($stickyArray, 'my_sort');
-        foreach ($stickyArray as $tile) {
+      function outputTile($tile) {
+          if ($tile["image_url"]) {
+            echo '<a href="'.$tile['click_url'].'"><img class="tile" height="50" width="50" alt="'.$tile["name"].'" title="'.$tile["name"].'" src="'.$tile["image_url"].'"></a>';
+            echo '<img src="'.$tile["impression_url"].'">';
+          }
+      }
+      $stickyArray = array_filter(
+          $tiles,
+          function ($e) {
+              return ($e["name"] == "Amazon" || $e["name"] == "Samsung - Performics");
+          }
+      );
+      function my_sort($a,$b)
+      {
+          if ($a["name"] == $b["name"]) return 0;
+          return ($a["name"] < $b["name"]) ? -1 : 1;
+      }
+      usort($stickyArray, 'my_sort');
+      foreach ($stickyArray as $tile) {
+        outputTile($tile);
+      }
+      $count = min(sizeof($tiles), 8);
+
+      $rand_keys = [0];
+      if ($count > 1) {
+        $rand_keys = array_rand($tiles, $count);
+      }
+
+      for ($i = 0; $i < $count; $i++) {
+        $tile = $tiles[$rand_keys[$i]];
+        if ($tile->{'name'} != "Amazon" &&
+          $tile->{'name'} != "Samsung - Performics") {
           outputTile($tile);
         }
-        $count = min(sizeof($tiles), 8);
-        $rand_keys = array_rand($tiles, $count);
-        for ($i = 0; $i < $count; $i++) {
-          if (isset($tiles[$rand_keys[$i]])) {
-            $tile = $tiles[$rand_keys[$i]];
-            if ($tile["name"] != "Amazon" && $tile["name"] != "Samsung - Performics") {
-              outputTile($tile);
-            }
-          }
-        }
+      }
     }
   }
 

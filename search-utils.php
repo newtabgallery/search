@@ -61,7 +61,7 @@
           continue;
         }
         if ($tile['name'] != "Amazon" &&
-          $tile-['name'] != "Samsung - Performics") {
+          $tile['name'] != "Samsung - Performics") {
           outputTile($tile);
         }
       }

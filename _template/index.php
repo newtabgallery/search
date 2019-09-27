@@ -66,7 +66,7 @@
 #web-listings {
   flex: 75%;
 }
-#tribal {
+#zergnet-widget-78644 {
   flex: 25%;
 }
   </style>
@@ -103,7 +103,15 @@
     </div>
   </header>
 
-  <?php
+  <!-- Results -->
+  <div id="results" class="container">
+    <div id="web-listings" class="results">
+      <div id="bing-ads-first"></div>
+      <div id="bing-ads-second"></div>
+      <div id="adm-ads"></div>
+      <div id="adm-search-results"></div>
+    </div>
+    <?php
   if ($title == "Test") {
     ?>
 <div id="zergnet-widget-78644"></div>
@@ -120,15 +128,8 @@
 <?php
   }
 ?>
-  <!-- Results -->
-  <div id="results" class="container">
-    <div id="web-listings" class="results">
-      <div id="bing-ads-first"></div>
-      <div id="bing-ads-second"></div>
-      <div id="adm-ads"></div>
-      <div id="adm-search-results"></div>
-    </div>
-    <div id="tribal" style=="text-align: center">
+  </div>
+    <div  style=="text-align: center">
 <!--BEGIN TRIBAL AD ADZONE DISPLAY CODE -->
 <script>(function(ins){ if ('https:'==document.location.protocol){var h='pubssl';} else {var h='pub';}
 var d = "abd"+ins, s = document.createElement('script');document.write('<div id="'+d+'"></div>');

@@ -58,6 +58,18 @@
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
   </script>
+  <style type="text/css">
+#results {
+  display: flex;
+}
+
+#web-listings {
+  flex: 75%;
+}
+#tribal {
+  flex: 25%;
+}
+  </style>
 </head>
 
 <?php echo $background_image_style; ?>
@@ -109,14 +121,14 @@
   }
 ?>
   <!-- Results -->
-  <div class="container">
+  <div id="results" class="container">
     <div id="web-listings" class="results">
       <div id="bing-ads-first"></div>
       <div id="bing-ads-second"></div>
       <div id="adm-ads"></div>
       <div id="adm-search-results"></div>
     </div>
-    <div style=="text-align: center">
+    <div id="tribal" style=="text-align: center">
 <!--BEGIN TRIBAL AD ADZONE DISPLAY CODE -->
 <script>(function(ins){ if ('https:'==document.location.protocol){var h='pubssl';} else {var h='pub';}
 var d = "abd"+ins, s = document.createElement('script');document.write('<div id="'+d+'"></div>');

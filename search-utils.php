@@ -54,6 +54,9 @@
       if ($count > 1) {
         $rand_keys = array_rand($tiles, $count);
       }
+      if ($title == 'Test') {
+        var_dump($tiles);
+      }
 
       for ($i = 0; $i < $count; $i++) {
         $tile = $tiles[$rand_keys[$i]];

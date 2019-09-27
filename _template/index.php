@@ -67,6 +67,7 @@
   flex: 75%;
 }
 #zergnet-widget-78644 {
+  padding-top: 10px;
   flex: 25%;
 }
   </style>

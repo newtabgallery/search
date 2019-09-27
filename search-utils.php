@@ -60,8 +60,8 @@
         if (!array_key_exists('name', $tile)) {
           continue;
         }
-        if ($tile->{'name'} != "Amazon" &&
-          $tile->{'name'} != "Samsung - Performics") {
+        if ($tile['name'] != "Amazon" &&
+          $tile-['name'] != "Samsung - Performics") {
           outputTile($tile);
         }
       }

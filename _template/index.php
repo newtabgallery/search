@@ -110,10 +110,15 @@
       <div id="bing-ads-second"></div>
       <div id="adm-ads"></div>
       <div id="adm-search-results"></div>
+      <div  style=="text-align: center">
+<!--BEGIN TRIBAL AD ADZONE DISPLAY CODE -->
+<script>(function(ins){ if ('https:'==document.location.protocol){var h='pubssl';} else {var h='pub';}
+var d = "abd"+ins, s = document.createElement('script');document.write('<div id="'+d+'"></div>');
+s.type = 'text/javascript'; s.src = '//'+h+'.pgssl.com/adv/ap/fastjsa.asp?m=i&z=60047&p=46661&n=231&s=l&rr='+d; s.async = true; s.defer = true; 
+document.body.appendChild(s);}((++window.abd || (window.abd = 0))));</script>
+<!--END TRIBAL AD ADZONE DISPLAY CODE -->
+</div>
     </div>
-    <?php
-  if ($title == "Test") {
-    ?>
 <div id="zergnet-widget-78644"></div>
 
 <script language="javascript" type="text/javascript">
@@ -125,18 +130,7 @@
         znscr.parentNode.insertBefore(zergnet, znscr);
     })();
 </script>
-<?php
-  }
-?>
   </div>
-    <div  style=="text-align: center">
-<!--BEGIN TRIBAL AD ADZONE DISPLAY CODE -->
-<script>(function(ins){ if ('https:'==document.location.protocol){var h='pubssl';} else {var h='pub';}
-var d = "abd"+ins, s = document.createElement('script');document.write('<div id="'+d+'"></div>');
-s.type = 'text/javascript'; s.src = '//'+h+'.pgssl.com/adv/ap/fastjsa.asp?m=i&z=60047&p=46661&n=231&s=l&rr='+d; s.async = true; s.defer = true; 
-document.body.appendChild(s);}((++window.abd || (window.abd = 0))));</script>
-<!--END TRIBAL AD ADZONE DISPLAY CODE -->
-</div>
   </div>
 
   <!-- Footer -->

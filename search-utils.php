@@ -57,7 +57,7 @@
 
       for ($i = 0; $i < $count; $i++) {
         $tile = $tiles[$rand_keys[$i]];
-        if ($tile->{'name'} != "Amazon" &&
+        if (is_object($tile) && $tile->{'name'} != "Amazon" &&
           $tile->{'name'} != "Samsung - Performics") {
           outputTile($tile);
         }

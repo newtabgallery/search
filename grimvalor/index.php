@@ -34,7 +34,7 @@ $background_image_style = "
   }
 
   header.masthead.background-8 {
-    background-image: url('https://home.newtabgallery.com/grimvalor/Snímka-obrazovky-2018-09-26-o-21.37.48.jpg')
+    background-image: url('https://home.newtabgallery.com/grimvalor/Snimka-obrazovky-2018-09-26-o-21.37.48.jpg')
   }
 </style>
 ";

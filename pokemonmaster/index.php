@@ -10,19 +10,19 @@ $background_image_style = "
   }
 
   header.masthead.background-2 {
-    background-image: url('https://home.newtabgallery.com/pokemonmaster/Pokémon-Masters-Logo.jpg')
-  }
-
-  header.masthead.background-3 {
     background-image: url('https://home.newtabgallery.com/pokemonmaster/D7533C73-AF5E-4975-951C-58D033DE3874.jpeg')
   }
 
-  header.masthead.background-4 {
+  header.masthead.background-3 {
     background-image: url('https://home.newtabgallery.com/pokemonmaster/pokemonmastersanimatedthumb-1561650333179.png')
   }
 
-  header.masthead.background-5 {
+  header.masthead.background-4 {
     background-image: url('https://home.newtabgallery.com/pokemonmaster/Banner-PokemonMasters-Promo-Art.jpg')
+  }
+
+  header.masthead.background-5 {
+    background-image: url('https://home.newtabgallery.com/pokemonmaster/Pokemon-Masters-Logo.jpg')
   }
 
   header.masthead.background-6 {

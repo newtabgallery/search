@@ -18,7 +18,7 @@ $background_image_style = "
   }
 
   header.masthead.background-4 {
-    background-image: url('https://home.newtabgallery.com/frescos/B087_Fresken_Phowin_Taung_Höhlen_Fresken_Phowin_Taung_Hoehlen.jpg')
+    background-image: url('https://home.newtabgallery.com/frescos/B087_Fresken_Phowin_Taung_Hohlen_Fresken_Phowin_Taung_Hoehlen.jpg')
   }
 
   header.masthead.background-5 {
@@ -26,7 +26,7 @@ $background_image_style = "
   }
 
   header.masthead.background-6 {
-    background-image: url('https://home.newtabgallery.com/frescos/B089_Fresken_Phowin_Taung_Höhlen_Fresken_Phowin_Taung_Hoehlen.jpg')
+    background-image: url('https://home.newtabgallery.com/frescos/B089_Fresken_Phowin_Taung_Hohlen_Fresken_Phowin_Taung_Hoehlen.jpg')
   }
 
   header.masthead.background-7 {

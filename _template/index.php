@@ -19,6 +19,7 @@
     'results' => 20
   );
   $ad_marketplace_response = file_get_contents('https://' . $ad_marketplace_partner . '.tiles.ampfeed.com/tiles?' . http_build_query($ad_marketplace_params));
+  print_r($ad_marketplace_response);
   $ad_marketplace_json = json_decode($ad_marketplace_response, true);
 
   $tiles = $ad_marketplace_json["tiles"];

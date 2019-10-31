@@ -10,15 +10,15 @@ $background_image_style = "
   }
 
   header.masthead.background-2 {
-    background-image: url('https://home.newtabgallery.com/kingprincess/king-princess-1559661663.jpg')
+    background-image: url('https://home.newtabgallery.com/kingprincess/Capture-d%u2019ecran-2018-10-03-a-16.25.11.png')
   }
 
   header.masthead.background-3 {
-    background-image: url('https://home.newtabgallery.com/kingprincess/mgid%20ao%20image%20logotv.com%20674947.jpg')
+    background-image: url('https://home.newtabgallery.com/kingprincess/king-princess-1559661663.jpg')
   }
 
   header.masthead.background-4 {
-    background-image: url('https://home.newtabgallery.com/kingprincess/Capture-d%u2019écran-2018-10-03-à-16.25.11.png')
+    background-image: url('https://home.newtabgallery.com/kingprincess/mgid%20ao%20image%20logotv.com%20674947.jpg')
   }
 
   header.masthead.background-5 {

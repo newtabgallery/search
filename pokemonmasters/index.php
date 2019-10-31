@@ -10,11 +10,11 @@ $background_image_style = "
   }
 
   header.masthead.background-2 {
-    background-image: url('https://home.newtabgallery.com/pokemonmasters/pokemon-masters-mobile-game-announced-trainer_feature.jpg')
+    background-image: url('https://home.newtabgallery.com/pokemonmasters/pokemon-masters-annuncio.jpg')
   }
 
   header.masthead.background-3 {
-    background-image: url('https://home.newtabgallery.com/pokemonmasters/pokémon-masters-annuncio.jpg')
+    background-image: url('https://home.newtabgallery.com/pokemonmasters/pokemon-masters-mobile-game-announced-trainer_feature.jpg')
   }
 </style>
 ";

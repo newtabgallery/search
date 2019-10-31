@@ -22,7 +22,10 @@
   print_r($ad_marketplace_response);
   $ad_marketplace_json = json_decode($ad_marketplace_response, true);
 
-  $tiles = $ad_marketplace_json["tiles"];
+  $tiles = NULL;
+  if( isset( $ad_marketplace_json["tiles"] ) ){
+    $tiles = $ad_marketplace_json["tiles"];
+  }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -44,7 +47,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
   <!-- Custom styles for this template -->
-  <link href="../_assets/css/landing-page.min.css?v=<?php echo filemtime('../_assets/css/landing-page.min.css'); ?>" rel="stylesheet">
+  <link href="../_assets/css/landing-page.min.css?v=<?php echo filemtime($_SERVER["DOCUMENT_ROOT"]."/_assets/css/landing-page.min.css"); ?>" rel="stylesheet">
 
   <script type="text/javascript">
     var _gaq = _gaq || [];
@@ -56,6 +59,19 @@
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
   </script>
+  <style type="text/css">
+#results {
+  display: flex;
+}
+
+#web-listings {
+  flex: 75%;
+}
+#zergnet-widget-78644 {
+  padding-top: 10px;
+  flex: 25%;
+}
+  </style>
 </head>
 
 <?php echo $background_image_style; ?>
@@ -90,22 +106,13 @@
   </header>
 
   <!-- Results -->
-  <div class="container">
-  <div style=="text-align: center">
-<!--BEGIN TRIBAL AD ADZONE DISPLAY CODE -->
-<script>(function(ins){ if ('https:'==document.location.protocol){var h='pubssl';} else {var h='pub';}
-var d = "abd"+ins, s = document.createElement('script');document.write('<div id="'+d+'"></div>');
-s.type = 'text/javascript'; s.src = '//'+h+'.pgssl.com/adv/ap/fastjsa.asp?m=i&z=60047&p=46661&n=231&s=l&rr='+d; s.async = true; s.defer = true; 
-document.body.appendChild(s);}((++window.abd || (window.abd = 0))));</script>
-<!--END TRIBAL AD ADZONE DISPLAY CODE -->
-</div>
+  <div id="results" class="container">
     <div id="web-listings" class="results">
       <div id="bing-ads-first"></div>
       <div id="bing-ads-second"></div>
       <div id="adm-ads"></div>
       <div id="adm-search-results"></div>
-    </div>
-    <div style=="text-align: center">
+      <div  style=="text-align: center">
 <!--BEGIN TRIBAL AD ADZONE DISPLAY CODE -->
 <script>(function(ins){ if ('https:'==document.location.protocol){var h='pubssl';} else {var h='pub';}
 var d = "abd"+ins, s = document.createElement('script');document.write('<div id="'+d+'"></div>');
@@ -113,6 +120,19 @@ s.type = 'text/javascript'; s.src = '//'+h+'.pgssl.com/adv/ap/fastjsa.asp?m=i&z=
 document.body.appendChild(s);}((++window.abd || (window.abd = 0))));</script>
 <!--END TRIBAL AD ADZONE DISPLAY CODE -->
 </div>
+    </div>
+<div id="zergnet-widget-78644"></div>
+
+<script language="javascript" type="text/javascript">
+    (function() {
+        var zergnet = document.createElement('script');
+        zergnet.type = 'text/javascript'; zergnet.async = true;
+        zergnet.src = (document.location.protocol == "https:" ? "https:" : "http:") + '//www.zergnet.com/zerg.js?id=78644';
+        var znscr = document.getElementsByTagName('script')[0];
+        znscr.parentNode.insertBefore(zergnet, znscr);
+    })();
+</script>
+  </div>
   </div>
 
   <!-- Footer -->
@@ -134,6 +154,6 @@ document.body.appendChild(s);}((++window.abd || (window.abd = 0))));</script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://yourfirstcheapshop.com/api.min.js"></script>
-  <script src="../_assets/vendor/js/main.min.js?v=<?php echo filemtime('../_assets/vendor/js/main.min.js'); ?>"></script>
+  <script src="../_assets/vendor/js/main.min.js?v=<?php echo filemtime($_SERVER["DOCUMENT_ROOT"]."/_assets/vendor/js/main.min.js"); ?>"></script>
 </body>
 </html>

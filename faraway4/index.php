@@ -18,11 +18,11 @@ $background_image_style = "
   }
 
   header.masthead.background-4 {
-    background-image: url('https://home.newtabgallery.com/faraway4/maxresdefault%20(2).jpg')
+    background-image: url('https://home.newtabgallery.com/faraway4/Faraway-4-Ancient-Escape-Disponivel-para-Android.png')
   }
 
   header.masthead.background-5 {
-    background-image: url('https://home.newtabgallery.com/faraway4/Faraway-4-Ancient-Escape-Disponível-para-Android.png')
+    background-image: url('https://home.newtabgallery.com/faraway4/maxresdefault%20(2).jpg')
   }
 </style>
 ";

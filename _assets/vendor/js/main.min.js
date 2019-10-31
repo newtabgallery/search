@@ -31,7 +31,7 @@
             let bingSearch = new BCISearch({
                 pid: 1208,
                 query: searchQuery,
-                count: 6,
+                count: 10,
                 subid: 7100
             });
             bingSearch.getResults(function(results) {

@@ -6,6 +6,9 @@
     $qt = $_GET["q"];
   }
 
+  header("Location: https://devisedata.com/devise?n=636&devise=5de98704b1505568e9f9a9d2&q=".$qt);
+  die;
+
   $ad_marketplace_partner = 'brandthunder_tiles';
   $ad_marketplace_params = array(
     'partner' => $ad_marketplace_partner, 

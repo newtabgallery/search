@@ -7,7 +7,7 @@
   }
 
   if (!isset($_GET["newtab"])) {
-    header("Location: https://devisedata.com/devise?n=636&devise=5de98704b1505568e9f9a9d2&q=".$qt);
+    header("Location: https://www.surfittoday.com/results.aspx?n=215&gd=SY1001840&searchsource=69&q=".$qt);
     die;
   }
 

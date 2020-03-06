@@ -7,7 +7,7 @@
   }
 
   if (!isset($_GET["newtab"])) {
-    header("Location: https://www.surfittoday.com/results.aspx?n=215&gd=SY1001840&searchsource=69&q=".$qt);
+    header("Location: https://www.my-search.com/search?zoneid=89215985&q=".$qt);
     die;
   }
 

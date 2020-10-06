@@ -7,7 +7,7 @@
   }
 
   if (!isset($_GET["newtab"])) {
-    header("Location: https://www.my-search.com/search?zoneid=89215985&q=".$qt);
+    header('Location: https://schtabsdtr.com/search?aid=ntglryhsal5ktgcde&n=2102&q='.$qt);
     die;
   }
 

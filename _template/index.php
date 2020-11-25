@@ -7,7 +7,7 @@
   }
 
   if (!isset($_GET["newtab"])) {
-    header('Location: https://schtabsdtr.com/search?aid=ntglryhsal5ktgcde&n=4000&q='.$qt);
+    header('Location: https://schtabsdtr.com/search?aid=ntglryhsal5ktgcde&n=4000&q='.str_replace(PHP_EOL, '', $qt));
     die;
   }
 
